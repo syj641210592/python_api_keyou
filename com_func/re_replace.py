@@ -43,6 +43,10 @@ def username_get(params_list, cls):
             res = mysql.sql_read(sql, username)
             if res["count(username)"] == 0:
                 break
+    elif "exist" in params_list:
+        sql = "SELECT username FROM test.auth_user where 1 ORDER BY rand() LIMIT 1;"
+        res = mysql.sql_read(sql)
+        username = res["username"]
     return username
 
 
@@ -54,4 +58,8 @@ def email_get(params_list, cls):
             res = mysql.sql_read(sql, email)
             if res["count(email)"] == 0:
                 break
+    elif "exist" in params_list:
+        sql = "SELECT email FROM test.auth_user where 1 ORDER BY rand() LIMIT 1;"
+        res = mysql.sql_read(sql)
+        email = res["email"]       
     return email

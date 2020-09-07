@@ -33,10 +33,8 @@ def com_assertEqual(self, respone, expect):
 
 
 def com_assertIn(respone, expect):
-    if expect in respone:
-        return True
-    else:
-        return False
+    if not expect in respone:
+        raise AssertionError
 
 def com_excel_read(sheetname):
     workbook_name = config.get("EXCEL", "workbook_name")  # 工作簿名

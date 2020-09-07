@@ -1,5 +1,0 @@
-2020-09-06 23:30:13,213 - [re_replace.py-->line:25] - ERROR: 带*参数解析失败
-Traceback (most recent call last):
-  File "c:\工具资料\GitHub\python_api_keyou\com_func\re_replace.py", line 19, in params_get
-    res = email_get(res_list, cls)
-TypeError: email_get() takes 1 positional argument but 2 were given
