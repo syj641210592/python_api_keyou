@@ -35,7 +35,7 @@ def expect_params_get(params_list, cls):
     return expect_params
 
 
-def username_get(params_list, cls):
+def username_get(params_list, cls=None):
     if "new" in params_list:
         while True:
             username = ''.join(random.sample(string.ascii_letters + string.digits, int(params_list[2])))
@@ -43,14 +43,12 @@ def username_get(params_list, cls):
             res = mysql.sql_read(sql, username)
             if res["count(username)"] == 0:
                 break
-    elif "exist" in params_list:
-        sql = "SELECT username FROM test.auth_user where 1 ORDER BY rand() LIMIT 1;"
-        res = mysql.sql_read(sql)
-        username = res["username"]
+    elif "unadmin" in params_list:
+        username = eval(config.get("PRESET", "unadmin_params"))["username"]
     return username
 
 
-def email_get(params_list, cls):
+def email_get(params_list, cls=None):
     if "new" in params_list:
         while True:
             email = f"{random.randint(0,999999999)}@qq.com"

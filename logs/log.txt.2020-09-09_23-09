@@ -1,0 +1,46 @@
+2020-09-09 23:09:44,165 - [test_case.py-->line:78] - INFO: 用例--登录成功_已注册的账号--执行成功
+2020-09-09 23:09:44,511 - [test_case.py-->line:74] - ERROR: 用例--登录失败_未注册的账号--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case.py", line 72, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 32, in com_assertEqual
+    com_assertIn(str(respone.json()), expect["msg"])  # msg
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 37, in com_assertIn
+    raise AssertionError
+AssertionError
+2020-09-09 23:09:44,647 - [test_case.py-->line:74] - ERROR: 用例--登录失败_账号为空--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case.py", line 72, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 32, in com_assertEqual
+    com_assertIn(str(respone.json()), expect["msg"])  # msg
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 37, in com_assertIn
+    raise AssertionError
+AssertionError
+2020-09-09 23:09:44,942 - [test_case.py-->line:74] - ERROR: 用例--登录失败_密码错误--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case.py", line 72, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 32, in com_assertEqual
+    com_assertIn(str(respone.json()), expect["msg"])  # msg
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 37, in com_assertIn
+    raise AssertionError
+AssertionError
+2020-09-09 23:09:45,107 - [test_case.py-->line:74] - ERROR: 用例--登录失败_密码为空--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case.py", line 72, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 32, in com_assertEqual
+    com_assertIn(str(respone.json()), expect["msg"])  # msg
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 37, in com_assertIn
+    raise AssertionError
+AssertionError
+2020-09-09 23:09:45,406 - [test_case.py-->line:74] - ERROR: 用例--登录失败_参数多余--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case.py", line 72, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 32, in com_assertEqual
+    com_assertIn(str(respone.json()), expect["msg"])  # msg
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 37, in com_assertIn
+    raise AssertionError
+AssertionError

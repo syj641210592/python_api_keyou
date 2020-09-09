@@ -1,17 +1,14 @@
-2020-09-07 22:58:20,590 - [test_case.py-->line:41] - INFO: 用例--注册成功_未注册的6位账号_邮箱--执行成功
-2020-09-07 22:58:21,138 - [test_case.py-->line:41] - INFO: 用例--注册成功_未注册的20位账号_邮箱--执行成功
-2020-09-07 22:58:21,717 - [test_case.py-->line:41] - INFO: 用例--注册成功_未注册的20位账号_邮箱_6位密码--执行成功
-2020-09-07 22:58:22,311 - [test_case.py-->line:41] - INFO: 用例--注册成功_未注册的20位账号_邮箱_20位密码--执行成功
-2020-09-07 22:58:22,639 - [test_case.py-->line:41] - INFO: 用例--注册失败_未注册的5位账号_邮箱--执行成功
-2020-09-07 22:58:22,936 - [test_case.py-->line:41] - INFO: 用例--注册失败_未注册的21位账号_邮箱--执行成功
-2020-09-07 22:58:23,289 - [test_case.py-->line:41] - INFO: 用例--注册失败_已注册账号_邮箱--执行成功
-2020-09-07 22:58:23,513 - [test_case.py-->line:41] - INFO: 用例--注册失败_账号为空--执行成功
-2020-09-07 22:58:23,919 - [test_case.py-->line:41] - INFO: 用例--注册失败_账号_已注册邮箱--执行成功
-2020-09-07 22:58:24,187 - [test_case.py-->line:41] - INFO: 用例--注册失败_账号_不合法邮箱--执行成功
-2020-09-07 22:58:24,438 - [test_case.py-->line:41] - INFO: 用例--注册失败_账号_不合法邮箱--执行成功
-2020-09-07 22:58:24,665 - [test_case.py-->line:41] - INFO: 用例--注册失败_邮箱为空--执行成功
-2020-09-07 22:58:24,962 - [test_case.py-->line:41] - INFO: 用例--注册失败_5位密码--执行成功
-2020-09-07 22:58:25,258 - [test_case.py-->line:41] - INFO: 用例--注册失败_21位密码--执行成功
-2020-09-07 22:58:25,552 - [test_case.py-->line:41] - INFO: 用例--注册失败_密码为空--执行成功
-2020-09-07 22:58:25,890 - [test_case.py-->line:41] - INFO: 用例--注册失败_21位密码--执行成功
-2020-09-07 22:58:26,218 - [test_case.py-->line:41] - INFO: 用例--注册失败_确认密码为空--执行成功
+2020-09-09 23:22:06,290 - [test_case.py-->line:78] - INFO: 用例--登录成功_已注册的账号--执行成功
+2020-09-09 23:22:06,610 - [test_case.py-->line:78] - INFO: 用例--登录失败_未注册的账号--执行成功
+2020-09-09 23:22:06,718 - [test_case.py-->line:78] - INFO: 用例--登录失败_账号为空--执行成功
+2020-09-09 23:22:06,974 - [test_case.py-->line:78] - INFO: 用例--登录失败_密码错误--执行成功
+2020-09-09 23:22:07,121 - [test_case.py-->line:78] - INFO: 用例--登录失败_密码为空--执行成功
+2020-09-09 23:22:07,393 - [test_case.py-->line:74] - ERROR: 用例--登录失败_参数多余--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case.py", line 72, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 32, in com_assertEqual
+    com_assertIn(str(respone.json()), expect["msg"])  # msg
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 37, in com_assertIn
+    raise AssertionError
+AssertionError

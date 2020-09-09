@@ -50,38 +50,40 @@ class TestRegister(unittest.TestCase):
         cls.excel.wb.close()
 
 
-# @ddt.ddt
-# class TestLogin(unittest.TestCase):
-#     '''登录接口测试'''
-#     Worksheet_name = "login"
-#     excel, data_list = com_excel_read(Worksheet_name)
+@ddt.ddt
+class TestLogin(unittest.TestCase):
+    '''注册接口测试'''
+    Worksheet_name = "login"
+    excel, data_list = com_excel_read(Worksheet_name)
 
-#     @classmethod
-#     def setUpClass(cls):
-#         cls.excel.wb = openpyxl.load_workbook(cls.excel.path) 
+    @classmethod
+    def setUpClass(cls):
+        cls.excel.wb = openpyxl.load_workbook(cls.excel.path) 
 
-#     def setUp(self):
-#         pass
+    def setUp(self):
+        pass
     
-#     @ddt.data(*data_list)
-#     @ddt.unpack
-#     def test_case(self, info, **kwargs):
-#         '''{info}'''
-#         try:
-#             respone = com_request(TestLogin, self.Worksheet_name, **kwargs)
-#             com_assertEqual(self, respone, eval(kwargs["expect"]))
-#         except AssertionError as e:
-#             log.error(f"用例--{info}--执行失败", exc_info=True)
-#             self.excel.excel_write(self.Worksheet_name, kwargs["id"], "失败")
-#             raise e
-#         else:
-#             log.info(f"用例--{info}--执行成功", exc_info=False)
-#             self.excel.excel_write(self.Worksheet_name, kwargs["id"], "成功")
+    @ddt.data(*data_list)
+    @ddt.unpack
+    def test_case(self, info, **kwargs):
+        '''{info}'''
+        try:
+            respone = com_request(TestLogin, self.Worksheet_name, **kwargs)
+            com_assertEqual(self, respone, eval(kwargs["expect"]))
+        except AssertionError as e:
+            log.error(f"用例--{info}--执行失败", exc_info=True)
+            self.excel.excel_write(self.Worksheet_name, kwargs["id"], "失败")
+            raise e
+        else:
+            log.info(f"用例--{info}--执行成功", exc_info=False)
+            self.excel.excel_write(self.Worksheet_name, kwargs["id"], "成功")
 
-#     def tearDown(self):
-#         pass
+    def tearDown(self):
+        pass
 
-#     @classmethod
-#     def tearDownClass(cls):
-#         cls.excel.wb.save(cls.excel.path)
-#         cls.excel.wb.close()
+    @classmethod
+    def tearDownClass(cls):
+        cls.excel.wb.save(cls.excel.path)
+        cls.excel.wb.close()
+
+
