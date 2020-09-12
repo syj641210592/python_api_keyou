@@ -1,14 +1,158 @@
-2020-09-09 23:22:06,290 - [test_case.py-->line:78] - INFO: 用例--登录成功_已注册的账号--执行成功
-2020-09-09 23:22:06,610 - [test_case.py-->line:78] - INFO: 用例--登录失败_未注册的账号--执行成功
-2020-09-09 23:22:06,718 - [test_case.py-->line:78] - INFO: 用例--登录失败_账号为空--执行成功
-2020-09-09 23:22:06,974 - [test_case.py-->line:78] - INFO: 用例--登录失败_密码错误--执行成功
-2020-09-09 23:22:07,121 - [test_case.py-->line:78] - INFO: 用例--登录失败_密码为空--执行成功
-2020-09-09 23:22:07,393 - [test_case.py-->line:74] - ERROR: 用例--登录失败_参数多余--执行失败
+2020-09-12 09:57:53,286 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_成功_项目名称长度1--执行成功
+2020-09-12 09:57:53,662 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_成功_项目名称长度200--执行成功
+2020-09-12 09:57:53,776 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_项目名称长度0--执行成功
+2020-09-12 09:57:53,987 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_项目名称长度201--执行成功
+2020-09-12 09:57:54,205 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_项目名称重复--执行成功
+2020-09-12 09:57:54,320 - [test_case_projects.py-->line:42] - ERROR: 用例--创建项目_失败_项目名称参数错误--执行失败
 Traceback (most recent call last):
-  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case.py", line 72, in test_case
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 35, in test_case
     com_assertEqual(self, respone, eval(kwargs["expect"]))
-  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 32, in com_assertEqual
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 35, in com_assertEqual
     com_assertIn(str(respone.json()), expect["msg"])  # msg
-  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 37, in com_assertIn
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 40, in com_assertIn
     raise AssertionError
 AssertionError
+2020-09-12 09:57:54,447 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_项目名称参数为空--执行成功
+2020-09-12 09:57:54,774 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_成功_项目负责人长度50--执行成功
+2020-09-12 09:57:55,007 - [test_case_projects.py-->line:42] - ERROR: 用例--创建项目_失败_领导人参数错误--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 35, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 34, in com_assertEqual
+    self.assertEqual(respone.status_code, expect["Status"])  # 判断code
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 400
+2020-09-12 09:57:55,242 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_领导人长度0--执行成功
+2020-09-12 09:57:55,466 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_领导人长度51--执行成功
+2020-09-12 09:57:55,685 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_领导人参数为空--执行成功
+2020-09-12 09:57:56,033 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_成功_项目测试人长度50--执行成功
+2020-09-12 09:57:56,274 - [test_case_projects.py-->line:42] - ERROR: 用例--创建项目_失败_项目测试人参数错误--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 35, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 34, in com_assertEqual
+    self.assertEqual(respone.status_code, expect["Status"])  # 判断code
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 400
+2020-09-12 09:57:56,494 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_项目测试人长度0--执行成功
+2020-09-12 09:57:56,708 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_项目测试人长度51--执行成功
+2020-09-12 09:57:56,929 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_项目测试人参数为空--执行成功
+2020-09-12 09:57:57,260 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_成功_项目开发人长度50--执行成功
+2020-09-12 09:57:57,492 - [test_case_projects.py-->line:42] - ERROR: 用例--创建项目_失败_开发人参数错误--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 35, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 34, in com_assertEqual
+    self.assertEqual(respone.status_code, expect["Status"])  # 判断code
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 400
+2020-09-12 09:57:57,706 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_开发人参长度为0--执行成功
+2020-09-12 09:57:57,918 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_开发人参长度为51--执行成功
+2020-09-12 09:57:58,134 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_开发人参数为空--执行成功
+2020-09-12 09:57:58,463 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_成功_发布应用长度100--执行成功
+2020-09-12 09:57:58,681 - [test_case_projects.py-->line:42] - ERROR: 用例--创建项目_失败_发布应用参数错误--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 35, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 34, in com_assertEqual
+    self.assertEqual(respone.status_code, expect["Status"])  # 判断code
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 400
+2020-09-12 09:57:58,917 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_发布应用参数长度为0--执行成功
+2020-09-12 09:57:59,133 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_发布应用参数长度为101--执行成功
+2020-09-12 09:57:59,352 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_发布应用参数长度为空--执行成功
+2020-09-12 09:57:59,696 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_成功_简要描述长度200--执行成功
+2020-09-12 09:58:00,062 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_成功_简要描述长度0--执行成功
+2020-09-12 09:58:00,390 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_成功_简要描述长度为空--执行成功
+2020-09-12 09:58:00,614 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_简要描述长度201--执行成功
+2020-09-12 09:58:23,362 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_成功_项目名称长度1--执行成功
+2020-09-12 09:58:23,724 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_成功_项目名称长度200--执行成功
+2020-09-12 09:58:23,847 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_项目名称长度0--执行成功
+2020-09-12 09:58:24,074 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_项目名称长度201--执行成功
+2020-09-12 09:58:24,319 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_项目名称重复--执行成功
+2020-09-12 09:58:24,439 - [test_case_projects.py-->line:42] - ERROR: 用例--创建项目_失败_项目名称参数错误--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 35, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 35, in com_assertEqual
+    com_assertIn(str(respone.json()), expect["msg"])  # msg
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 40, in com_assertIn
+    raise AssertionError
+AssertionError
+2020-09-12 09:58:24,567 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_项目名称参数为空--执行成功
+2020-09-12 09:58:24,919 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_成功_项目负责人长度50--执行成功
+2020-09-12 09:58:25,165 - [test_case_projects.py-->line:42] - ERROR: 用例--创建项目_失败_领导人参数错误--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 35, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 34, in com_assertEqual
+    self.assertEqual(respone.status_code, expect["Status"])  # 判断code
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 400
+2020-09-12 09:58:25,399 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_领导人长度0--执行成功
+2020-09-12 09:58:25,627 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_领导人长度51--执行成功
+2020-09-12 09:58:25,853 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_领导人参数为空--执行成功
+2020-09-12 09:58:26,229 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_成功_项目测试人长度50--执行成功
+2020-09-12 09:58:26,468 - [test_case_projects.py-->line:42] - ERROR: 用例--创建项目_失败_项目测试人参数错误--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 35, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 34, in com_assertEqual
+    self.assertEqual(respone.status_code, expect["Status"])  # 判断code
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 400
+2020-09-12 09:58:26,699 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_项目测试人长度0--执行成功
+2020-09-12 09:58:26,915 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_项目测试人长度51--执行成功
+2020-09-12 09:58:27,133 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_项目测试人参数为空--执行成功
+2020-09-12 09:58:27,494 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_成功_项目开发人长度50--执行成功
+2020-09-12 09:58:27,757 - [test_case_projects.py-->line:42] - ERROR: 用例--创建项目_失败_开发人参数错误--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 35, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 34, in com_assertEqual
+    self.assertEqual(respone.status_code, expect["Status"])  # 判断code
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 400
+2020-09-12 09:58:27,988 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_开发人参长度为0--执行成功
+2020-09-12 09:58:28,209 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_开发人参长度为51--执行成功
+2020-09-12 09:58:28,462 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_开发人参数为空--执行成功
+2020-09-12 09:58:28,812 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_成功_发布应用长度100--执行成功
+2020-09-12 09:58:29,048 - [test_case_projects.py-->line:42] - ERROR: 用例--创建项目_失败_发布应用参数错误--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 35, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 34, in com_assertEqual
+    self.assertEqual(respone.status_code, expect["Status"])  # 判断code
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 400
+2020-09-12 09:58:29,270 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_发布应用参数长度为0--执行成功
+2020-09-12 09:58:29,513 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_发布应用参数长度为101--执行成功
+2020-09-12 09:58:29,729 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_发布应用参数长度为空--执行成功
+2020-09-12 09:58:30,076 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_成功_简要描述长度200--执行成功
+2020-09-12 09:58:30,414 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_成功_简要描述长度0--执行成功
+2020-09-12 09:58:30,758 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_成功_简要描述长度为空--执行成功
+2020-09-12 09:58:30,977 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_简要描述长度201--执行成功

@@ -14,10 +14,13 @@ def com_request(cls, api, **kwargs):
     setattr(cls, "params", params)
     method = config.get("METHOD", api + "_method")
 
-
+    # -------------------请求头----------------------------
+    headers={}
+    if "token" in kwargs.keys():
+        headers["Authorization"] = kwargs["token"]  
 
     # -------------------请求响应----------------------------
-    respone = requests.request(method, api_url, json=params)  # 请求
+    respone = requests.request(method, api_url, json=params, headers=headers)  # 请求
     return respone
 
 

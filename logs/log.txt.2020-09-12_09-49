@@ -1,0 +1,30 @@
+2020-09-12 09:48:30,536 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_成功_项目名称长度1--执行成功
+2020-09-12 09:48:47,114 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_成功_项目名称长度200--执行成功
+2020-09-12 09:48:47,237 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_项目名称长度0--执行成功
+2020-09-12 09:48:47,461 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_项目名称长度201--执行成功
+2020-09-12 09:48:47,692 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_项目名称重复--执行成功
+2020-09-12 09:48:47,818 - [test_case_projects.py-->line:42] - ERROR: 用例--创建项目_失败_项目名称参数错误--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 35, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 35, in com_assertEqual
+    com_assertIn(str(respone.json()), expect["msg"])  # msg
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 40, in com_assertIn
+    raise AssertionError
+AssertionError
+2020-09-12 09:48:47,945 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_项目名称参数为空--执行成功
+2020-09-12 09:49:07,787 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_成功_项目负责人长度50--执行成功
+2020-09-12 09:49:08,018 - [test_case_projects.py-->line:42] - ERROR: 用例--创建项目_失败_领导人参数错误--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 35, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 34, in com_assertEqual
+    self.assertEqual(respone.status_code, expect["Status"])  # 判断code
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 400
+2020-09-12 09:49:08,245 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_领导人长度0--执行成功
+2020-09-12 09:49:15,474 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_领导人长度51--执行成功
+2020-09-12 09:49:15,694 - [test_case_projects.py-->line:46] - INFO: 用例--创建项目_失败_领导人参数为空--执行成功

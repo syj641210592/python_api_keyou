@@ -52,7 +52,7 @@ class TestRegister(unittest.TestCase):
 
 @ddt.ddt
 class TestLogin(unittest.TestCase):
-    '''注册接口测试'''
+    '''登录接口测试'''
     Worksheet_name = "login"
     excel, data_list = com_excel_read(Worksheet_name)
 
