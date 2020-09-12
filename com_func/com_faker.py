@@ -18,6 +18,8 @@ def data_create(type_name, length, *args, **kwargs):
                 data_en = faker_en.pystr(min_chars=None, max_chars=int(random.randint(1, int(length))))
                 data_cn = faker_cn.text(max_nb_chars=int(length)).replace(".", "").replace("\n", "")[0:int(length)-len(data_en)]
                 data = data_en + data_cn
+            else:
+                data = ""
             while True:
                 if len(data) < int(length):
                     data = data + data[0:int(length)-len(data)]
