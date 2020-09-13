@@ -17,10 +17,12 @@ def params_get(params, cls, type_mode=0):
                 res_list = res_value.group(1).split(" ")  # 切割带*参数
                 if res_list[0] == "username":
                     res = username_get(res_list, cls)
-                elif res_list[0] == "name":
-                    res = name_get(res_list, cls)                    
+                elif res_list[0] == "name" or res_list[0] == "tcname":
+                    res = name_get(res_list, cls)                   
                 elif res_list[0] == "email":
                     res = email_get(res_list, cls)
+                elif res_list[0] == "projects":
+                    res = projects_get(res_list, cls)
                 elif res_list[0] == "params":
                     res = expect_params_get(res_list, cls)
                 params = params.replace(res_str, str(res))
@@ -39,15 +41,20 @@ def expect_params_get(params_list, cls):
     return expect_params
 
 def name_get(params_list, cls=None):
+    if params_list[0] =="name":
+        database_name = "tb_projects"
+    elif params_list[0] =="tcname":
+        database_name = "tb_interfaces"
+
     if "new" in params_list:
         while True:
             name = data_create("str", params_list[2], str_type=params_list[3])
-            sql = "SELECT count(name) FROM test.tb_projects WHERE name = %s;"
+            sql = f"SELECT count(name) FROM test.{database_name} WHERE name = %s;"
             res = mysql.sql_read(sql, name)
             if res["count(name)"] == 0:
                 break
     elif "exist" in params_list:
-        sql = "SELECT name FROM test.tb_projects WHERE 1 ORDER BY rand() LIMIT 1;"
+        sql = f"SELECT name FROM test.{database_name} WHERE 1 ORDER BY rand() LIMIT 1;"
         res = mysql.sql_read(sql)
         name = res["name"]
     elif "str" in params_list:
@@ -80,3 +87,13 @@ def email_get(params_list, cls=None):
         res = mysql.sql_read(sql)
         email = res["email"]       
     return email
+
+def projects_get(params_list, cls=None):
+    if "id" in params_list:
+        if "exist" in params_list:
+            id = eval(config.get("PRESET", "projects"))["id"]
+        elif "new" in params_list:
+            sql = "SELECT max(id) FROM test.tb_interfaces;"
+            res = mysql.sql_read(sql)
+            id = int(res["max(id)"]) + 100
+    return id

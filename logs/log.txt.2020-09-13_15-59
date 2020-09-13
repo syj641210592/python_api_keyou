@@ -1,0 +1,61 @@
+2020-09-13 15:59:47,338 - [test_case_projects.py-->line:94] - INFO: 用例--创建接口_成功_名称长度1--执行成功
+2020-09-13 15:59:47,695 - [test_case_projects.py-->line:94] - INFO: 用例--创建接口_成功_名称长度200--执行成功
+2020-09-13 15:59:47,848 - [test_case_projects.py-->line:94] - INFO: 用例--创建接口_错误_名称长度0--执行成功
+2020-09-13 15:59:48,061 - [test_case_projects.py-->line:94] - INFO: 用例--创建接口_错误_名称长度201--执行成功
+2020-09-13 15:59:48,163 - [re_replace.py-->line:31] - ERROR: 带*参数解析失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\re_replace.py", line 21, in params_get
+    res = name_get(res_list, cls)
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\re_replace.py", line 59, in name_get
+    name = res["name"]
+KeyError: 'name'
+2020-09-13 15:59:48,168 - [test_case_projects.py-->line:90] - ERROR: 用例--创建接口_错误_名称重复--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\re_replace.py", line 21, in params_get
+    res = name_get(res_list, cls)
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\re_replace.py", line 59, in name_get
+    name = res["name"]
+KeyError: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 82, in test_case
+    respone = com_request(TestInterfaces, self.Worksheet_name, **kwargs, token=self.token)
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 13, in com_request
+    params = params_get(str(kwargs["params"]).replace("\n", ""), cls)  # 参数处理
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\re_replace.py", line 32, in params_get
+    raise AssertionError
+AssertionError
+2020-09-13 15:59:48,331 - [test_case_projects.py-->line:90] - ERROR: 用例--创建接口_错误_名称类型--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 83, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 35, in com_assertEqual
+    com_assertIn(str(respone.json()), expect["msg"])  # msg
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 40, in com_assertIn
+    raise AssertionError
+AssertionError
+2020-09-13 15:59:48,490 - [test_case_projects.py-->line:94] - INFO: 用例--创建接口_错误_名称不填--执行成功
+2020-09-13 15:59:48,805 - [test_case_projects.py-->line:94] - INFO: 用例--创建接口_成功_测试人员长度50--执行成功
+2020-09-13 15:59:49,012 - [test_case_projects.py-->line:94] - INFO: 用例--创建接口_错误_测试人员长度0--执行成功
+2020-09-13 15:59:49,230 - [test_case_projects.py-->line:94] - INFO: 用例--创建接口_错误_测试人员长度51--执行成功
+2020-09-13 15:59:49,447 - [test_case_projects.py-->line:90] - ERROR: 用例--创建接口_错误_测试人员类型--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 83, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 34, in com_assertEqual
+    self.assertEqual(respone.status_code, expect["Status"])  # 判断code
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 400
+2020-09-13 15:59:49,670 - [test_case_projects.py-->line:94] - INFO: 用例--创建接口_错误_测试人员不填--执行成功
+2020-09-13 15:59:49,965 - [test_case_projects.py-->line:94] - INFO: 用例--创建接口_错误_所属项目id不存在--执行成功
+2020-09-13 15:59:50,195 - [test_case_projects.py-->line:94] - INFO: 用例--创建接口_错误_所属项目id为空--执行成功
+2020-09-13 15:59:50,417 - [test_case_projects.py-->line:94] - INFO: 用例--创建接口_错误_所属项目id不填--执行成功
+2020-09-13 15:59:50,761 - [test_case_projects.py-->line:94] - INFO: 用例--创建项目_成功_简要描述长度200--执行成功
+2020-09-13 15:59:51,092 - [test_case_projects.py-->line:94] - INFO: 用例--创建项目_成功_简要描述长度0--执行成功
+2020-09-13 15:59:51,412 - [test_case_projects.py-->line:94] - INFO: 用例--创建项目_成功_简要描述长度为空--执行成功
+2020-09-13 15:59:51,635 - [test_case_projects.py-->line:94] - INFO: 用例--创建项目_失败_简要描述长度201--执行成功
