@@ -1,0 +1,103 @@
+2020-09-13 16:43:39,949 - [test_case_projects.py-->line:141] - INFO: 用例--创建用例_成功_名称长度1--执行成功
+2020-09-13 16:43:40,303 - [test_case_projects.py-->line:141] - INFO: 用例--创建用例_成功_名称长度50--执行成功
+2020-09-13 16:43:40,592 - [test_case_projects.py-->line:137] - ERROR: 用例--创建用例_失败_项目id无效--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 130, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 35, in com_assertEqual
+    com_assertIn(str(respone.json()), expect["msg"])  # msg
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 40, in com_assertIn
+    raise AssertionError
+AssertionError
+2020-09-13 16:43:40,889 - [test_case_projects.py-->line:137] - ERROR: 用例--创建用例_失败_接口id无效--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 130, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 35, in com_assertEqual
+    com_assertIn(str(respone.json()), expect["msg"])  # msg
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 40, in com_assertIn
+    raise AssertionError
+AssertionError
+2020-09-13 16:43:41,126 - [test_case_projects.py-->line:137] - ERROR: 用例--创建用例_失败_项目和接口为空--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 130, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 35, in com_assertEqual
+    com_assertIn(str(respone.json()), expect["msg"])  # msg
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 40, in com_assertIn
+    raise AssertionError
+AssertionError
+2020-09-13 16:43:41,351 - [test_case_projects.py-->line:137] - ERROR: 用例--创建用例_失败_项目和接口不填--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 130, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 35, in com_assertEqual
+    com_assertIn(str(respone.json()), expect["msg"])  # msg
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 40, in com_assertIn
+    raise AssertionError
+AssertionError
+2020-09-13 16:43:41,578 - [test_case_projects.py-->line:137] - ERROR: 用例--创建用例_失败_前置为空--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 130, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 35, in com_assertEqual
+    com_assertIn(str(respone.json()), expect["msg"])  # msg
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 40, in com_assertIn
+    raise AssertionError
+AssertionError
+2020-09-13 16:43:41,818 - [test_case_projects.py-->line:137] - ERROR: 用例--创建用例_成功_编写人员长度50--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 130, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 34, in com_assertEqual
+    self.assertEqual(respone.status_code, expect["Status"])  # 判断code
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+AssertionError: 201 != 400
+2020-09-13 16:43:42,059 - [test_case_projects.py-->line:137] - ERROR: 用例--创建用例_失败_编写人员长度51--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 130, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 35, in com_assertEqual
+    com_assertIn(str(respone.json()), expect["msg"])  # msg
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 40, in com_assertIn
+    raise AssertionError
+AssertionError
+2020-09-13 16:43:42,283 - [test_case_projects.py-->line:137] - ERROR: 用例--创建用例_失败_编写人员长度0--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 130, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 35, in com_assertEqual
+    com_assertIn(str(respone.json()), expect["msg"])  # msg
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 40, in com_assertIn
+    raise AssertionError
+AssertionError
+2020-09-13 16:43:42,513 - [test_case_projects.py-->line:137] - ERROR: 用例--创建用例_失败_编写人员不填--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 130, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 35, in com_assertEqual
+    com_assertIn(str(respone.json()), expect["msg"])  # msg
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 40, in com_assertIn
+    raise AssertionError
+AssertionError
+2020-09-13 16:43:42,726 - [test_case_projects.py-->line:137] - ERROR: 用例--创建用例_失败_请求信息为空--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 130, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 35, in com_assertEqual
+    com_assertIn(str(respone.json()), expect["msg"])  # msg
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 40, in com_assertIn
+    raise AssertionError
+AssertionError
+2020-09-13 16:43:42,950 - [test_case_projects.py-->line:137] - ERROR: 用例--创建用例_失败_请求信息不填--执行失败
+Traceback (most recent call last):
+  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 130, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 35, in com_assertEqual
+    com_assertIn(str(respone.json()), expect["msg"])  # msg
+  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 40, in com_assertIn
+    raise AssertionError
+AssertionError

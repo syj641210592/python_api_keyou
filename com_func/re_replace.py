@@ -17,12 +17,12 @@ def params_get(params, cls, type_mode=0):
                 res_list = res_value.group(1).split(" ")  # 切割带*参数
                 if res_list[0] == "username":
                     res = username_get(res_list, cls)
-                elif res_list[0] == "name" or res_list[0] == "tcname":
+                elif "name" in res_list[0]:
                     res = name_get(res_list, cls)                   
                 elif res_list[0] == "email":
                     res = email_get(res_list, cls)
-                elif res_list[0] == "projects":
-                    res = projects_get(res_list, cls)
+                elif res_list[0] == "projects" or res_list[0] == "interfaces":
+                    res = projects_interfaces_get(res_list, cls)
                 elif res_list[0] == "params":
                     res = expect_params_get(res_list, cls)
                 params = params.replace(res_str, str(res))
@@ -43,8 +43,10 @@ def expect_params_get(params_list, cls):
 def name_get(params_list, cls=None):
     if params_list[0] =="name":
         database_name = "tb_projects"
-    elif params_list[0] =="tcname":
+    elif params_list[0] =="tiname":
         database_name = "tb_interfaces"
+    elif params_list[0] =="tcname":
+        database_name = "tb_testcases"
 
     if "new" in params_list:
         while True:
@@ -88,12 +90,18 @@ def email_get(params_list, cls=None):
         email = res["email"]       
     return email
 
-def projects_get(params_list, cls=None):
+def projects_interfaces_get(params_list, cls=None):
+    if params_list[0] =="projects":
+        database_name = "tb_projects"
+    elif params_list[0] =="interfaces":
+        database_name = "tb_interfaces"
+
+
     if "id" in params_list:
         if "exist" in params_list:
-            id = eval(config.get("PRESET", "projects"))["id"]
+            id = eval(config.get("PRESET", params_list[0]))["id"]
         elif "new" in params_list:
-            sql = "SELECT max(id) FROM test.tb_interfaces;"
+            sql = f"SELECT max(id) FROM test.{database_name};"
             res = mysql.sql_read(sql)
             id = int(res["max(id)"]) + 100
     return id

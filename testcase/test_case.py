@@ -29,7 +29,7 @@ class TestRegister(unittest.TestCase):
             respone = com_request(TestRegister, self.Worksheet_name, **kwargs)
             com_assertEqual(self, respone, eval(kwargs["expect"]))
             if kwargs["sql_cheack"]:  # 存在sql校验,获取新增注册名称
-                res = mysql.sql_read(kwargs["sql_cheack"], jsonpath(respone.json(), "$..username"))
+                res = mysql.sql_read(kwargs["sql_cheack"], jsonpath(respone.json(), "$..username")[0])
                 print("实际项目名称:", res["username"])
                 print("预期项目名称:", self.params["username"])
                 self.assertEqual(res["username"], self.params["username"])  # 校验更新后的昵称与预期

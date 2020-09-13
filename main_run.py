@@ -2,7 +2,7 @@ from com_func.getpath import testpath
 from com_func.confread import config
 from com_func.sql_request import mysql
 from com_func.env_func import env_params_init
-from testcase.test_case_projects import TestInterfaces
+from testcase.test_case_projects import TestTestcases
 import unittest
 import unittestreport
 import os
@@ -12,7 +12,7 @@ test_suit = unittest.TestSuite()
 # 测试加载器
 test_loder = unittest.TestLoader()
 # 加载加载器
-test_suit.addTest(test_loder.loadTestsFromTestCase(TestInterfaces))
+test_suit.addTest(test_loder.discover(testpath.TEST_CASE_DIR_PATH))
 # 预置环境账号
 env_params_init()
 

@@ -151,15 +151,15 @@
             </li>
             <li class="list-group-item">
                 <button type="button" class="btn btn-success">开始时间</button>
-                <span class="text-dark">2020-09-13 16:03:14</span>
+                <span class="text-dark">2020-09-13 16:49:16</span>
             </li>
             <li class="list-group-item">
                 <button type="button" class="btn btn-success">执行时间</button>
-                <span class="text-dark">8.14 S</span>
+                <span class="text-dark">24.57 S</span>
             </li>
             <li class="list-group-item">
                 <button type="button" class="btn btn-success">用例总数</button>
-                <span class="text-dark">19</span>
+                <span class="text-dark">89</span>
             </li>
 
 
@@ -170,11 +170,11 @@
 
             <li class="list-group-item">
                 <button type="button" class="btn btn-success">成功用例</button>
-                <span class="text-success">17</span>
+                <span class="text-success">79</span>
             </li>
             <li class="list-group-item">
                 <button type="button" class="btn btn-danger">失败用例</button>
-                <span class="text-warning">2</span>
+                <span class="text-warning">10</span>
             </li>
             <li class="list-group-item">
                 <button type="button" class="btn btn-warning">错误用例</button>
@@ -220,7 +220,15 @@
                     <select id="testClass">
                         <option>所有</option>
                         
+                            <option>TestLogin</option>
+                        
+                            <option>TestRegister</option>
+                        
                             <option>TestInterfaces</option>
+                        
+                            <option>TestProjects</option>
+                        
+                            <option>TestTestcases</option>
                         
                     </select>
 
@@ -248,10 +256,10 @@
             
                 <tr>
                     <td>1</td>
-                    <td class="TestInterfaces">TestInterfaces</td>
-                    <td>test_case_01</td>
-                    <td>创建接口_成功_名称长度1</td>
-                    <td>0.315s</td>
+                    <td class="TestLogin">TestLogin</td>
+                    <td>test_case_1</td>
+                    <td>登录成功_已注册的账号</td>
+                    <td>0.353s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -265,11 +273,9 @@
                     <td colspan="7">
                         
 
-                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 68, 'name': 'C', 'tester': '孙忘', 'project': 'lfqrR', 'project_id': 116, 'desc': '时序自动化', 'create_time': '2020-09-13T16:03:14.860746+08:00'}"}
-预期状态: {'Status': 201, 'msg': 'C'}
-实际用例名称: C
-预期用例名称: C
-test_case_01 (testcase.test_case_projects.TestInterfaces)执行——>【通过】
+                            <pre>实际状态: {'Status': 200, 'msg': "{'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0MjMsInVzZXJuYW1lIjoicVNsWlNqIiwiZXhwIjoxNjAwMDczMzU2LCJlbWFpbCI6IjU1NjMwNTM3MUBxcS5jb20ifQ.Bxx-Hc4_yM-lTi-CmQdoWYHLNwIxRobEK7qLYmAMaFg', 'user_id': 423, 'username': 'qSlZSj'}"}
+预期状态: {'Status': 200, 'msg': 'qSlZSj'}
+test_case_1 (test_case.TestLogin)执行——>【通过】
 </pre>
                         
                         
@@ -278,10 +284,10 @@ test_case_01 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
             
                 <tr>
                     <td>2</td>
-                    <td class="TestInterfaces">TestInterfaces</td>
-                    <td>test_case_02</td>
-                    <td>创建接口_成功_名称长度200</td>
-                    <td>0.342s</td>
+                    <td class="TestLogin">TestLogin</td>
+                    <td>test_case_2</td>
+                    <td>登录失败_未注册的账号</td>
+                    <td>0.328s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -295,11 +301,9 @@ test_case_01 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
                     <td colspan="7">
                         
 
-                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 69, 'name': 'UEZodFtnfzkzIVvRzNLnCCzCpnEhHiKdTMEcGZjbpTljGyZevVQTHqUgBngoBTlNVQCPAyNDWJIGNSKAaiPgehVwIkCSLCqDJSZHWVSKOwrAQBhgczoBMJbXYpUywyapgOWe我的喜欢地区名称教育最大要求以后注意价格汽车运行我的合作成功情况文章计划是一解决学习浏览会员公司帮助下载得到一直提供有些活动国家标题最大', 'tester': '孙忘', 'project': 'lfqrR', 'project_id': 116, 'desc': '时序自动化', 'create_time': '2020-09-13T16:03:15.186262+08:00'}"}
-预期状态: {'Status': 201, 'msg': 'UEZodFtnfzkzIVvRzNLnCCzCpnEhHiKdTMEcGZjbpTljGyZevVQTHqUgBngoBTlNVQCPAyNDWJIGNSKAaiPgehVwIkCSLCqDJSZHWVSKOwrAQBhgczoBMJbXYpUywyapgOWe我的喜欢地区名称教育最大要求以后注意价格汽车运行我的合作成功情况文章计划是一解决学习浏览会员公司帮助下载得到一直提供有些活动国家标题最大'}
-实际用例名称: UEZodFtnfzkzIVvRzNLnCCzCpnEhHiKdTMEcGZjbpTljGyZevVQTHqUgBngoBTlNVQCPAyNDWJIGNSKAaiPgehVwIkCSLCqDJSZHWVSKOwrAQBhgczoBMJbXYpUywyapgOWe我的喜欢地区名称教育最大要求以后注意价格汽车运行我的合作成功情况文章计划是一解决学习浏览会员公司帮助下载得到一直提供有些活动国家标题最大
-预期用例名称: UEZodFtnfzkzIVvRzNLnCCzCpnEhHiKdTMEcGZjbpTljGyZevVQTHqUgBngoBTlNVQCPAyNDWJIGNSKAaiPgehVwIkCSLCqDJSZHWVSKOwrAQBhgczoBMJbXYpUywyapgOWe我的喜欢地区名称教育最大要求以后注意价格汽车运行我的合作成功情况文章计划是一解决学习浏览会员公司帮助下载得到一直提供有些活动国家标题最大
-test_case_02 (testcase.test_case_projects.TestInterfaces)执行——>【通过】
+                            <pre>实际状态: {'Status': 400, 'msg': "{'non_field_errors': ['无法使用提供的认证信息登录。']}"}
+预期状态: {'Status': 400, 'msg': '无法使用提供的认证信息登录'}
+test_case_2 (test_case.TestLogin)执行——>【通过】
 </pre>
                         
                         
@@ -308,10 +312,906 @@ test_case_02 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
             
                 <tr>
                     <td>3</td>
+                    <td class="TestLogin">TestLogin</td>
+                    <td>test_case_3</td>
+                    <td>登录失败_账号为空</td>
+                    <td>0.114s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'username': ['该字段是必填项。']}"}
+预期状态: {'Status': 400, 'msg': '该字段是必填项'}
+test_case_3 (test_case.TestLogin)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>4</td>
+                    <td class="TestLogin">TestLogin</td>
+                    <td>test_case_4</td>
+                    <td>登录失败_密码错误</td>
+                    <td>0.265s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'non_field_errors': ['无法使用提供的认证信息登录。']}"}
+预期状态: {'Status': 400, 'msg': '无法使用提供的认证信息登录'}
+test_case_4 (test_case.TestLogin)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>5</td>
+                    <td class="TestLogin">TestLogin</td>
+                    <td>test_case_5</td>
+                    <td>登录失败_密码为空</td>
+                    <td>0.148s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'password': ['该字段是必填项。']}"}
+预期状态: {'Status': 400, 'msg': '该字段是必填项'}
+test_case_5 (test_case.TestLogin)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>6</td>
+                    <td class="TestLogin">TestLogin</td>
+                    <td>test_case_6</td>
+                    <td>登录失败_参数多余</td>
+                    <td>0.289s</td>
+                    
+                        <td class="text-danger">失败</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 200, 'msg': "{'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0MjMsInVzZXJuYW1lIjoicVNsWlNqIiwiZXhwIjoxNjAwMDczMzU3LCJlbWFpbCI6IjU1NjMwNTM3MUBxcS5jb20ifQ.ncjJxE1Tm4yMpr5xc7uwYtJBHQTmWPTM7NgC1KLW0n8', 'user_id': 423, 'username': 'qSlZSj'}"}
+预期状态: {'Status': 200, 'msg': '参数多余'}
+test_case_6 (test_case.TestLogin)执行——>【失败】
+</pre>
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 628, in run
+    testMethod()
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\site-packages\ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case.py", line 76, in test_case
+    raise e
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case.py", line 72, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 35, in com_assertEqual
+    com_assertIn(str(respone.json()), expect["msg"])  # msg
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 40, in com_assertIn
+    raise AssertionError
+</pre>
+                        
+
+                            <pre>AssertionError
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>7</td>
+                    <td class="TestRegister">TestRegister</td>
+                    <td>test_case_01</td>
+                    <td>注册成功_未注册的6位账号_邮箱</td>
+                    <td>0.493s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 425, 'username': 'gsrFgY', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0MjUsInVzZXJuYW1lIjoiZ3NyRmdZIiwiZXhwIjoxNjAwMDczMzU4LCJlbWFpbCI6Ijk4NjY0MjYwN0BxcS5jb20ifQ.Ac08HPvsVOvYSsGNXenzHdKN_OqNBeS2M7arinVe5Fk'}"}
+预期状态: {'Status': 201, 'msg': 'gsrFgY'}
+实际项目名称: gsrFgY
+预期项目名称: gsrFgY
+test_case_01 (test_case.TestRegister)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>8</td>
+                    <td class="TestRegister">TestRegister</td>
+                    <td>test_case_02</td>
+                    <td>注册成功_未注册的20位账号_邮箱</td>
+                    <td>0.484s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 426, 'username': 'liGglPbXolxxJzyywnUL', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0MjYsInVzZXJuYW1lIjoibGlHZ2xQYlhvbHh4Snp5eXduVUwiLCJleHAiOjE2MDAwNzMzNTgsImVtYWlsIjoiMjI0Nzg2ODA3QHFxLmNvbSJ9.YleEUv-5OuOB13a_NQjf1xj3thlPWHW6o8iInlEh5fA'}"}
+预期状态: {'Status': 201, 'msg': 'liGglPbXolxxJzyywnUL'}
+实际项目名称: liGglPbXolxxJzyywnUL
+预期项目名称: liGglPbXolxxJzyywnUL
+test_case_02 (test_case.TestRegister)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>9</td>
+                    <td class="TestRegister">TestRegister</td>
+                    <td>test_case_03</td>
+                    <td>注册成功_未注册的20位账号_邮箱_6位密码</td>
+                    <td>0.511s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 427, 'username': 'TINTeg', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0MjcsInVzZXJuYW1lIjoiVElOVGVnIiwiZXhwIjoxNjAwMDczMzU5LCJlbWFpbCI6IjUyNTg5NzU1MkBxcS5jb20ifQ._bdM5MrGMI4v2oWxwUgIwYt2KBj5Z1aDG5-NvwGh3zg'}"}
+预期状态: {'Status': 201, 'msg': 'TINTeg'}
+实际项目名称: TINTeg
+预期项目名称: TINTeg
+test_case_03 (test_case.TestRegister)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>10</td>
+                    <td class="TestRegister">TestRegister</td>
+                    <td>test_case_04</td>
+                    <td>注册成功_未注册的20位账号_邮箱_20位密码</td>
+                    <td>0.493s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 428, 'username': 'dPEjyoNdmoLNVEPlqFZn', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0MjgsInVzZXJuYW1lIjoiZFBFanlvTmRtb0xOVkVQbHFGWm4iLCJleHAiOjE2MDAwNzMzNTksImVtYWlsIjoiNDA2OTU4MjYxQHFxLmNvbSJ9.EIG2Zw3IuIWFU7Xp7sokzxbiqP35etqUGIoshSWfe2c'}"}
+预期状态: {'Status': 201, 'msg': 'dPEjyoNdmoLNVEPlqFZn'}
+实际项目名称: dPEjyoNdmoLNVEPlqFZn
+预期项目名称: dPEjyoNdmoLNVEPlqFZn
+test_case_04 (test_case.TestRegister)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>11</td>
+                    <td class="TestRegister">TestRegister</td>
+                    <td>test_case_05</td>
+                    <td>注册失败_未注册的5位账号_邮箱</td>
+                    <td>0.285s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'username': ['仅允许6-20个字符的用户名']}"}
+预期状态: {'Status': 400, 'msg': '仅允许6-20个字符的用户名'}
+test_case_05 (test_case.TestRegister)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>12</td>
+                    <td class="TestRegister">TestRegister</td>
+                    <td>test_case_06</td>
+                    <td>注册失败_未注册的21位账号_邮箱</td>
+                    <td>0.275s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'username': ['仅允许6-20个字符的用户名']}"}
+预期状态: {'Status': 400, 'msg': '仅允许6-20个字符的用户名'}
+test_case_06 (test_case.TestRegister)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>13</td>
+                    <td class="TestRegister">TestRegister</td>
+                    <td>test_case_07</td>
+                    <td>注册失败_已注册账号_邮箱</td>
+                    <td>0.0161s</td>
+                    
+                        <td class="text-danger">失败</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>test_case_07 (test_case.TestRegister)执行——>【失败】
+</pre>
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\com_func\re_replace.py", line 19, in params_get
+    res = username_get(res_list, cls)
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\com_func\re_replace.py", line 76, in username_get
+    return username
+</pre>
+                        
+
+                            <pre>UnboundLocalError: local variable 'username' referenced before assignment
+</pre>
+                        
+
+                            <pre>
+During handling of the above exception, another exception occurred:
+
+</pre>
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 628, in run
+    testMethod()
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\site-packages\ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case.py", line 39, in test_case
+    raise e
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case.py", line 29, in test_case
+    respone = com_request(TestRegister, self.Worksheet_name, **kwargs)
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 13, in com_request
+    params = params_get(str(kwargs["params"]).replace("\n", ""), cls)  # 参数处理
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\com_func\re_replace.py", line 32, in params_get
+    raise AssertionError
+</pre>
+                        
+
+                            <pre>AssertionError
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>14</td>
+                    <td class="TestRegister">TestRegister</td>
+                    <td>test_case_08</td>
+                    <td>注册失败_账号为空</td>
+                    <td>0.214s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'username': ['该字段是必填项。']}"}
+预期状态: {'Status': 400, 'msg': '该字段是必填项'}
+test_case_08 (test_case.TestRegister)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>15</td>
+                    <td class="TestRegister">TestRegister</td>
+                    <td>test_case_09</td>
+                    <td>注册失败_账号_已注册邮箱</td>
+                    <td>0.268s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'email': ['此邮箱已注册']}"}
+预期状态: {'Status': 400, 'msg': '此邮箱已注册'}
+test_case_09 (test_case.TestRegister)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>16</td>
+                    <td class="TestRegister">TestRegister</td>
+                    <td>test_case_10</td>
+                    <td>注册失败_账号_不合法邮箱</td>
+                    <td>0.208s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'email': ['请输入合法的邮件地址。']}"}
+预期状态: {'Status': 400, 'msg': '请输入合法的邮件地址。'}
+test_case_10 (test_case.TestRegister)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>17</td>
+                    <td class="TestRegister">TestRegister</td>
+                    <td>test_case_11</td>
+                    <td>注册失败_账号_不合法邮箱</td>
+                    <td>0.21s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'email': ['请输入合法的邮件地址。']}"}
+预期状态: {'Status': 400, 'msg': '请输入合法的邮件地址。'}
+test_case_11 (test_case.TestRegister)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>18</td>
+                    <td class="TestRegister">TestRegister</td>
+                    <td>test_case_12</td>
+                    <td>注册失败_账号_不合法邮箱</td>
+                    <td>0.199s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'email': ['请输入合法的邮件地址。']}"}
+预期状态: {'Status': 400, 'msg': '请输入合法的邮件地址。'}
+test_case_12 (test_case.TestRegister)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>19</td>
+                    <td class="TestRegister">TestRegister</td>
+                    <td>test_case_13</td>
+                    <td>注册失败_账号_不合法邮箱</td>
+                    <td>0.335s</td>
+                    
+                        <td class="text-danger">失败</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 429, 'username': 'goWSMu', 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo0MjksInVzZXJuYW1lIjoiZ29XU011IiwiZXhwIjoxNjAwMDczMzYyLCJlbWFpbCI6IjY0MTIxMDU5MkBxcS5jb20uY29tIn0.Jqm4JlnMjKZ8aq4Qt3fTgBz2xcFM-EcjAhC5mSC6sXM'}"}
+预期状态: {'Status': 400, 'msg': '请输入合法的邮件地址。'}
+test_case_13 (test_case.TestRegister)执行——>【失败】
+</pre>
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 628, in run
+    testMethod()
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\site-packages\ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case.py", line 39, in test_case
+    raise e
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case.py", line 30, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 34, in com_assertEqual
+    self.assertEqual(respone.status_code, expect["Status"])  # 判断code
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+</pre>
+                        
+
+                            <pre>AssertionError: 201 != 400
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>20</td>
+                    <td class="TestRegister">TestRegister</td>
+                    <td>test_case_14</td>
+                    <td>注册失败_账号_不合法邮箱</td>
+                    <td>0.204s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'email': ['请输入合法的邮件地址。']}"}
+预期状态: {'Status': 400, 'msg': '请输入合法的邮件地址。'}
+test_case_14 (test_case.TestRegister)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>21</td>
+                    <td class="TestRegister">TestRegister</td>
+                    <td>test_case_15</td>
+                    <td>注册失败_邮箱为空</td>
+                    <td>0.196s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'email': ['该字段是必填项。']}"}
+预期状态: {'Status': 400, 'msg': '该字段是必填项'}
+test_case_15 (test_case.TestRegister)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>22</td>
+                    <td class="TestRegister">TestRegister</td>
+                    <td>test_case_16</td>
+                    <td>注册失败_5位密码</td>
+                    <td>0.267s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'password': ['仅允许6-20个字符的密码'], 'password_confirm': ['仅允许6~20个字符的确认密码']}"}
+预期状态: {'Status': 400, 'msg': '仅允许6-20个字符的密码'}
+test_case_16 (test_case.TestRegister)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>23</td>
+                    <td class="TestRegister">TestRegister</td>
+                    <td>test_case_17</td>
+                    <td>注册失败_21位密码</td>
+                    <td>0.271s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'password': ['仅允许6-20个字符的密码'], 'password_confirm': ['仅允许6~20个字符的确认密码']}"}
+预期状态: {'Status': 400, 'msg': '仅允许6-20个字符的密码'}
+test_case_17 (test_case.TestRegister)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>24</td>
+                    <td class="TestRegister">TestRegister</td>
+                    <td>test_case_18</td>
+                    <td>注册失败_密码为空</td>
+                    <td>0.274s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'password': ['该字段是必填项。']}"}
+预期状态: {'Status': 400, 'msg': '该字段是必填项'}
+test_case_18 (test_case.TestRegister)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>25</td>
+                    <td class="TestRegister">TestRegister</td>
+                    <td>test_case_19</td>
+                    <td>注册失败_21位密码</td>
+                    <td>0.279s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'non_field_errors': ['两次输入密码不正确']}"}
+预期状态: {'Status': 400, 'msg': '两次输入密码不正确'}
+test_case_19 (test_case.TestRegister)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>26</td>
+                    <td class="TestRegister">TestRegister</td>
+                    <td>test_case_20</td>
+                    <td>注册失败_确认密码为空</td>
+                    <td>0.278s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'password_confirm': ['该字段是必填项。']}"}
+预期状态: {'Status': 400, 'msg': '该字段是必填项'}
+test_case_20 (test_case.TestRegister)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>27</td>
+                    <td class="TestInterfaces">TestInterfaces</td>
+                    <td>test_case_01</td>
+                    <td>创建接口_成功_名称长度1</td>
+                    <td>0.314s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 110, 'name': 'V', 'tester': '孙忘', 'project': 'htqsj', 'project_id': 170, 'desc': '时序自动化', 'create_time': '2020-09-13T16:49:24.531849+08:00'}"}
+预期状态: {'Status': 201, 'msg': 'V'}
+实际接口名称: V
+预期接口名称: V
+test_case_01 (test_case_projects.TestInterfaces)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>28</td>
+                    <td class="TestInterfaces">TestInterfaces</td>
+                    <td>test_case_02</td>
+                    <td>创建接口_成功_名称长度200</td>
+                    <td>0.35s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 111, 'name': 'PNUfWXWvteNabKknmmgTiooJuIkDGvXkrVDjklgFUAOYVPMUklrtvcyssnxGvtiFZIpXRYZtdYHEBlpKUDYdjhioqzPmwsoKxqqmvIkkjbSWkKEGTCpUYStnirMeSMjIcaypmcJmoYlBnhJETkoeiRPHEjIbfVWftQTKvGWdrQT还是积分显示类型正在地址环境空间标题不过根据觉得安全时候也', 'tester': '孙忘', 'project': 'htqsj', 'project_id': 170, 'desc': '时序自动化', 'create_time': '2020-09-13T16:49:24.853980+08:00'}"}
+预期状态: {'Status': 201, 'msg': 'PNUfWXWvteNabKknmmgTiooJuIkDGvXkrVDjklgFUAOYVPMUklrtvcyssnxGvtiFZIpXRYZtdYHEBlpKUDYdjhioqzPmwsoKxqqmvIkkjbSWkKEGTCpUYStnirMeSMjIcaypmcJmoYlBnhJETkoeiRPHEjIbfVWftQTKvGWdrQT还是积分显示类型正在地址环境空间标题不过根据觉得安全时候也'}
+实际接口名称: PNUfWXWvteNabKknmmgTiooJuIkDGvXkrVDjklgFUAOYVPMUklrtvcyssnxGvtiFZIpXRYZtdYHEBlpKUDYdjhioqzPmwsoKxqqmvIkkjbSWkKEGTCpUYStnirMeSMjIcaypmcJmoYlBnhJETkoeiRPHEjIbfVWftQTKvGWdrQT还是积分显示类型正在地址环境空间标题不过根据觉得安全时候也
+预期接口名称: PNUfWXWvteNabKknmmgTiooJuIkDGvXkrVDjklgFUAOYVPMUklrtvcyssnxGvtiFZIpXRYZtdYHEBlpKUDYdjhioqzPmwsoKxqqmvIkkjbSWkKEGTCpUYStnirMeSMjIcaypmcJmoYlBnhJETkoeiRPHEjIbfVWftQTKvGWdrQT还是积分显示类型正在地址环境空间标题不过根据觉得安全时候也
+test_case_02 (test_case_projects.TestInterfaces)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>29</td>
                     <td class="TestInterfaces">TestInterfaces</td>
                     <td>test_case_03</td>
                     <td>创建接口_错误_名称长度0</td>
-                    <td>0.148s</td>
+                    <td>0.154s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -327,7 +1227,7 @@ test_case_02 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
 
                             <pre>实际状态: {'Status': 400, 'msg': "{'name': ['该字段不能为空。']}"}
 预期状态: {'Status': 400, 'msg': '该字段不能为空'}
-test_case_03 (testcase.test_case_projects.TestInterfaces)执行——>【通过】
+test_case_03 (test_case_projects.TestInterfaces)执行——>【通过】
 </pre>
                         
                         
@@ -335,7 +1235,7 @@ test_case_03 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
                 </tr>
             
                 <tr>
-                    <td>4</td>
+                    <td>30</td>
                     <td class="TestInterfaces">TestInterfaces</td>
                     <td>test_case_04</td>
                     <td>创建接口_错误_名称长度201</td>
@@ -355,7 +1255,7 @@ test_case_03 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
 
                             <pre>实际状态: {'Status': 400, 'msg': "{'name': ['请确保这个字段不能超过 200 个字符。']}"}
 预期状态: {'Status': 400, 'msg': '请确保这个字段不能超过 200 个字符'}
-test_case_04 (testcase.test_case_projects.TestInterfaces)执行——>【通过】
+test_case_04 (test_case_projects.TestInterfaces)执行——>【通过】
 </pre>
                         
                         
@@ -363,11 +1263,11 @@ test_case_04 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
                 </tr>
             
                 <tr>
-                    <td>5</td>
+                    <td>31</td>
                     <td class="TestInterfaces">TestInterfaces</td>
                     <td>test_case_05</td>
                     <td>创建接口_错误_名称重复</td>
-                    <td>3.11s</td>
+                    <td>0.202s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -383,7 +1283,7 @@ test_case_04 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
 
                             <pre>实际状态: {'Status': 400, 'msg': "{'name': ['具有 接口名称 的 接口信息 已存在。']}"}
 预期状态: {'Status': 400, 'msg': '具有 接口名称 的 接口信息 已存在'}
-test_case_05 (testcase.test_case_projects.TestInterfaces)执行——>【通过】
+test_case_05 (test_case_projects.TestInterfaces)执行——>【通过】
 </pre>
                         
                         
@@ -391,11 +1291,11 @@ test_case_05 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
                 </tr>
             
                 <tr>
-                    <td>6</td>
+                    <td>32</td>
                     <td class="TestInterfaces">TestInterfaces</td>
                     <td>test_case_06</td>
                     <td>创建接口_错误_名称类型</td>
-                    <td>0.153s</td>
+                    <td>0.156s</td>
                     
                         <td class="text-danger">失败</td>
                     
@@ -411,7 +1311,7 @@ test_case_05 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
 
                             <pre>实际状态: {'Status': 400, 'msg': "{'name': ['具有 接口名称 的 接口信息 已存在。']}"}
 预期状态: {'Status': 400, 'msg': '参数错误'}
-test_case_06 (testcase.test_case_projects.TestInterfaces)执行——>【失败】
+test_case_06 (test_case_projects.TestInterfaces)执行——>【失败】
 </pre>
                         
 
@@ -462,11 +1362,11 @@ test_case_06 (testcase.test_case_projects.TestInterfaces)执行——>【失败�
                 </tr>
             
                 <tr>
-                    <td>7</td>
+                    <td>33</td>
                     <td class="TestInterfaces">TestInterfaces</td>
                     <td>test_case_07</td>
                     <td>创建接口_错误_名称不填</td>
-                    <td>0.145s</td>
+                    <td>0.141s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -482,7 +1382,7 @@ test_case_06 (testcase.test_case_projects.TestInterfaces)执行——>【失败�
 
                             <pre>实际状态: {'Status': 400, 'msg': "{'name': ['该字段是必填项。']}"}
 预期状态: {'Status': 400, 'msg': '该字段是必填项'}
-test_case_07 (testcase.test_case_projects.TestInterfaces)执行——>【通过】
+test_case_07 (test_case_projects.TestInterfaces)执行——>【通过】
 </pre>
                         
                         
@@ -490,11 +1390,11 @@ test_case_07 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
                 </tr>
             
                 <tr>
-                    <td>8</td>
+                    <td>34</td>
                     <td class="TestInterfaces">TestInterfaces</td>
                     <td>test_case_08</td>
                     <td>创建接口_成功_测试人员长度50</td>
-                    <td>0.333s</td>
+                    <td>0.317s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -508,11 +1408,11 @@ test_case_07 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
                     <td colspan="7">
                         
 
-                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 70, 'name': 'nUBwg专业美国重', 'tester': 'pebaUVDxgZaZCFzrmI处理管理国际网站无法由于搜索您的服务您的完全通过影响而且项目怎么', 'project': 'lfqrR', 'project_id': 116, 'desc': '时序自动化', 'create_time': '2020-09-13T16:03:19.295331+08:00'}"}
-预期状态: {'Status': 201, 'msg': 'nUBwg专业美国重'}
-实际用例名称: nUBwg专业美国重
-预期用例名称: nUBwg专业美国重
-test_case_08 (testcase.test_case_projects.TestInterfaces)执行——>【通过】
+                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 112, 'name': 'jxIXwkrXB更', 'tester': 'kaMqwuBXsstneUXFRxKjSCRKCEMhxJpKCJvYzMQGbbIb有关重要功能', 'project': 'htqsj', 'project_id': 170, 'desc': '时序自动化', 'create_time': '2020-09-13T16:49:26.052589+08:00'}"}
+预期状态: {'Status': 201, 'msg': 'jxIXwkrXB更'}
+实际接口名称: jxIXwkrXB更
+预期接口名称: jxIXwkrXB更
+test_case_08 (test_case_projects.TestInterfaces)执行——>【通过】
 </pre>
                         
                         
@@ -520,11 +1420,11 @@ test_case_08 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
                 </tr>
             
                 <tr>
-                    <td>9</td>
+                    <td>35</td>
                     <td class="TestInterfaces">TestInterfaces</td>
                     <td>test_case_09</td>
                     <td>创建接口_错误_测试人员长度0</td>
-                    <td>0.223s</td>
+                    <td>0.212s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -540,7 +1440,7 @@ test_case_08 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
 
                             <pre>实际状态: {'Status': 400, 'msg': "{'tester': ['该字段不能为空。']}"}
 预期状态: {'Status': 400, 'msg': '该字段不能为空'}
-test_case_09 (testcase.test_case_projects.TestInterfaces)执行——>【通过】
+test_case_09 (test_case_projects.TestInterfaces)执行——>【通过】
 </pre>
                         
                         
@@ -548,11 +1448,11 @@ test_case_09 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
                 </tr>
             
                 <tr>
-                    <td>10</td>
+                    <td>36</td>
                     <td class="TestInterfaces">TestInterfaces</td>
                     <td>test_case_10</td>
                     <td>创建接口_错误_测试人员长度51</td>
-                    <td>0.228s</td>
+                    <td>0.214s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -568,7 +1468,7 @@ test_case_09 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
 
                             <pre>实际状态: {'Status': 400, 'msg': "{'tester': ['请确保这个字段不能超过 50 个字符。']}"}
 预期状态: {'Status': 400, 'msg': '请确保这个字段不能超过 50 个字符'}
-test_case_10 (testcase.test_case_projects.TestInterfaces)执行——>【通过】
+test_case_10 (test_case_projects.TestInterfaces)执行——>【通过】
 </pre>
                         
                         
@@ -576,11 +1476,11 @@ test_case_10 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
                 </tr>
             
                 <tr>
-                    <td>11</td>
+                    <td>37</td>
                     <td class="TestInterfaces">TestInterfaces</td>
                     <td>test_case_11</td>
                     <td>创建接口_错误_测试人员类型</td>
-                    <td>0.248s</td>
+                    <td>0.211s</td>
                     
                         <td class="text-danger">失败</td>
                     
@@ -594,9 +1494,9 @@ test_case_10 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
                     <td colspan="7">
                         
 
-                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 71, 'name': 'TwPNw已经过程一', 'tester': '4680134403846', 'project': 'lfqrR', 'project_id': 116, 'desc': '时序自动化', 'create_time': '2020-09-13T16:03:20.090664+08:00'}"}
+                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 113, 'name': 'imBWMa处理进行', 'tester': '4680134403846', 'project': 'htqsj', 'project_id': 170, 'desc': '时序自动化', 'create_time': '2020-09-13T16:49:26.792680+08:00'}"}
 预期状态: {'Status': 400, 'msg': '参数错误'}
-test_case_11 (testcase.test_case_projects.TestInterfaces)执行——>【失败】
+test_case_11 (test_case_projects.TestInterfaces)执行——>【失败】
 </pre>
                         
 
@@ -652,11 +1552,11 @@ test_case_11 (testcase.test_case_projects.TestInterfaces)执行——>【失败�
                 </tr>
             
                 <tr>
-                    <td>12</td>
+                    <td>38</td>
                     <td class="TestInterfaces">TestInterfaces</td>
                     <td>test_case_12</td>
                     <td>创建接口_错误_测试人员不填</td>
-                    <td>0.227s</td>
+                    <td>0.207s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -672,7 +1572,7 @@ test_case_11 (testcase.test_case_projects.TestInterfaces)执行——>【失败�
 
                             <pre>实际状态: {'Status': 400, 'msg': "{'tester': ['该字段是必填项。']}"}
 预期状态: {'Status': 400, 'msg': '该字段是必填项'}
-test_case_12 (testcase.test_case_projects.TestInterfaces)执行——>【通过】
+test_case_12 (test_case_projects.TestInterfaces)执行——>【通过】
 </pre>
                         
                         
@@ -680,11 +1580,11 @@ test_case_12 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
                 </tr>
             
                 <tr>
-                    <td>13</td>
+                    <td>39</td>
                     <td class="TestInterfaces">TestInterfaces</td>
                     <td>test_case_13</td>
                     <td>创建接口_错误_所属项目id不存在</td>
-                    <td>0.281s</td>
+                    <td>0.264s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -698,9 +1598,9 @@ test_case_12 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
                     <td colspan="7">
                         
 
-                            <pre>实际状态: {'Status': 400, 'msg': "{'project_id': ['无效主键 “171” － 对象不存在。']}"}
+                            <pre>实际状态: {'Status': 400, 'msg': "{'project_id': ['无效主键 “270” － 对象不存在。']}"}
 预期状态: {'Status': 400, 'msg': '无效主键'}
-test_case_13 (testcase.test_case_projects.TestInterfaces)执行——>【通过】
+test_case_13 (test_case_projects.TestInterfaces)执行——>【通过】
 </pre>
                         
                         
@@ -708,11 +1608,11 @@ test_case_13 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
                 </tr>
             
                 <tr>
-                    <td>14</td>
+                    <td>40</td>
                     <td class="TestInterfaces">TestInterfaces</td>
                     <td>test_case_14</td>
                     <td>创建接口_错误_所属项目id为空</td>
-                    <td>0.223s</td>
+                    <td>0.208s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -728,7 +1628,7 @@ test_case_13 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
 
                             <pre>实际状态: {'Status': 400, 'msg': "{'project_id': ['该字段不能为 null。']}"}
 预期状态: {'Status': 400, 'msg': '该字段不能为 null'}
-test_case_14 (testcase.test_case_projects.TestInterfaces)执行——>【通过】
+test_case_14 (test_case_projects.TestInterfaces)执行——>【通过】
 </pre>
                         
                         
@@ -736,11 +1636,11 @@ test_case_14 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
                 </tr>
             
                 <tr>
-                    <td>15</td>
+                    <td>41</td>
                     <td class="TestInterfaces">TestInterfaces</td>
                     <td>test_case_15</td>
                     <td>创建接口_错误_所属项目id不填</td>
-                    <td>0.204s</td>
+                    <td>0.203s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -756,7 +1656,7 @@ test_case_14 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
 
                             <pre>实际状态: {'Status': 400, 'msg': "{'project_id': ['该字段是必填项。']}"}
 预期状态: {'Status': 400, 'msg': '该字段是必填项'}
-test_case_15 (testcase.test_case_projects.TestInterfaces)执行——>【通过】
+test_case_15 (test_case_projects.TestInterfaces)执行——>【通过】
 </pre>
                         
                         
@@ -764,11 +1664,11 @@ test_case_15 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
                 </tr>
             
                 <tr>
-                    <td>16</td>
+                    <td>42</td>
                     <td class="TestInterfaces">TestInterfaces</td>
                     <td>test_case_16</td>
                     <td>创建项目_成功_简要描述长度200</td>
-                    <td>0.339s</td>
+                    <td>0.449s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -782,11 +1682,11 @@ test_case_15 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
                     <td colspan="7">
                         
 
-                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 72, 'name': 'WAhUFSTYAS', 'tester': 'ZfhRHq地区同时', 'project': 'lfqrR', 'project_id': 116, 'desc': 'gcHIZyQQwgrzUopaBzmcwgSIaXvJMqrTkpNfVSzeGSPpOlGb比较政府起来产品留言积分世界全部在线简介发展具有处理主要如果国内介绍手机北京政府这些设计所有两个一下威望介绍操作生活所以责任只是必须我们广告大学支持包括最后由于增加电影的是到了显示网络的人各种以后如此他们阅读来源参加质量开发欢迎认为软件论坛他们人民到了注册能力认为的人首页什么因此这样经验一种为什为了因为', 'create_time': '2020-09-13T16:03:21.282211+08:00'}"}
-预期状态: {'Status': 201, 'msg': 'WAhUFSTYAS'}
-实际用例名称: WAhUFSTYAS
-预期用例名称: WAhUFSTYAS
-test_case_16 (testcase.test_case_projects.TestInterfaces)执行——>【通过】
+                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 114, 'name': 'LExZYyFq发现', 'tester': 'qzbV都是应该一下', 'project': 'htqsj', 'project_id': 170, 'desc': 'hdxbzEvahhVQNToiRZMvoPLwNVDxKiCouQVljwhwmOAVHTTVUGHYqBTXlIxnGIwrqITirvrRtAvtIsuyJqKDUtrNVKQpdnwtMWpIhSAuZSflJnaRrfutPhrXANoQOWOxsZFWKnUiqpdOafAKZjMtYpd质量有关电话比较注意应该联系孩子自己来自评论投资是一开始部门标题不断一下到了控制网络市场使用虽然无', 'create_time': '2020-09-13T16:49:27.894727+08:00'}"}
+预期状态: {'Status': 201, 'msg': 'LExZYyFq发现'}
+实际接口名称: LExZYyFq发现
+预期接口名称: LExZYyFq发现
+test_case_16 (test_case_projects.TestInterfaces)执行——>【通过】
 </pre>
                         
                         
@@ -794,11 +1694,11 @@ test_case_16 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
                 </tr>
             
                 <tr>
-                    <td>17</td>
+                    <td>43</td>
                     <td class="TestInterfaces">TestInterfaces</td>
                     <td>test_case_17</td>
                     <td>创建项目_成功_简要描述长度0</td>
-                    <td>0.317s</td>
+                    <td>0.306s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -812,11 +1712,11 @@ test_case_16 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
                     <td colspan="7">
                         
 
-                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 73, 'name': 'yMnZ介绍文化图片', 'tester': 'ZCrljwzs发现', 'project': 'lfqrR', 'project_id': 116, 'desc': '', 'create_time': '2020-09-13T16:03:21.600061+08:00'}"}
-预期状态: {'Status': 201, 'msg': 'yMnZ介绍文化图片'}
-实际用例名称: yMnZ介绍文化图片
-预期用例名称: yMnZ介绍文化图片
-test_case_17 (testcase.test_case_projects.TestInterfaces)执行——>【通过】
+                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 115, 'name': 'iHrpv男人什么图', 'tester': 'DkcEaZ数据提供', 'project': 'htqsj', 'project_id': 170, 'desc': '', 'create_time': '2020-09-13T16:49:28.343976+08:00'}"}
+预期状态: {'Status': 201, 'msg': 'iHrpv男人什么图'}
+实际接口名称: iHrpv男人什么图
+预期接口名称: iHrpv男人什么图
+test_case_17 (test_case_projects.TestInterfaces)执行——>【通过】
 </pre>
                         
                         
@@ -824,7 +1724,7 @@ test_case_17 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
                 </tr>
             
                 <tr>
-                    <td>18</td>
+                    <td>44</td>
                     <td class="TestInterfaces">TestInterfaces</td>
                     <td>test_case_18</td>
                     <td>创建项目_成功_简要描述长度为空</td>
@@ -842,11 +1742,11 @@ test_case_17 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
                     <td colspan="7">
                         
 
-                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 74, 'name': 'sxXaoqUSJ根', 'tester': 'Ag部门社会网络自己', 'project': 'lfqrR', 'project_id': 116, 'desc': None, 'create_time': '2020-09-13T16:03:21.913073+08:00'}"}
-预期状态: {'Status': 201, 'msg': 'sxXaoqUSJ根'}
-实际用例名称: sxXaoqUSJ根
-预期用例名称: sxXaoqUSJ根
-test_case_18 (testcase.test_case_projects.TestInterfaces)执行——>【通过】
+                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 116, 'name': 'xbZEey要求类别', 'tester': 'qshBQrd应用评', 'project': 'htqsj', 'project_id': 170, 'desc': None, 'create_time': '2020-09-13T16:49:28.655524+08:00'}"}
+预期状态: {'Status': 201, 'msg': 'xbZEey要求类别'}
+实际接口名称: xbZEey要求类别
+预期接口名称: xbZEey要求类别
+test_case_18 (test_case_projects.TestInterfaces)执行——>【通过】
 </pre>
                         
                         
@@ -854,11 +1754,11 @@ test_case_18 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
                 </tr>
             
                 <tr>
-                    <td>19</td>
+                    <td>45</td>
                     <td class="TestInterfaces">TestInterfaces</td>
                     <td>test_case_19</td>
                     <td>创建项目_失败_简要描述长度201</td>
-                    <td>0.22s</td>
+                    <td>0.228s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -874,7 +1774,1498 @@ test_case_18 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
 
                             <pre>实际状态: {'Status': 400, 'msg': "{'desc': ['请确保这个字段不能超过 200 个字符。']}"}
 预期状态: {'Status': 400, 'msg': '请确保这个字段不能超过 200 个字符'}
-test_case_19 (testcase.test_case_projects.TestInterfaces)执行——>【通过】
+test_case_19 (test_case_projects.TestInterfaces)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>46</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_01</td>
+                    <td>创建项目_成功_项目名称长度1</td>
+                    <td>0.31s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 171, 'create_time': '2020-09-13T16:49:29.715688+08:00', 'name': 'O', 'leader': '孙忘', 'tester': '孙忘', 'programmer': '孙忘', 'publish_app': '自动化分析工具', 'desc': '时序自动化'}"}
+预期状态: {'Status': 201, 'msg': 'O'}
+实际项目名称: O
+预期项目名称: O
+test_case_01 (test_case_projects.TestProjects)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>47</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_02</td>
+                    <td>创建项目_成功_项目名称长度200</td>
+                    <td>0.339s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 172, 'create_time': '2020-09-13T16:49:30.031040+08:00', 'name': 'XOCTIwyAlluQsvovzCwSCAfevgfTdrEQGNC非常资源就是只要如此文章标准这些新闻基本这是其中名称觉得虽然建设今天实现男人人员历史合作生活完全市场免费制作只有目前单位帖子以及其实你们就是只有文章进行出现时间方式当然产品单位一种这些以及发现出来有限发表文化法律他们以及进入电话商品自己留言那些之后学校完全这么业务XOCTIwyAlluQsvovzCwSCAfevgfTdrEQG', 'leader': '孙忘', 'tester': '孙忘', 'programmer': '孙忘', 'publish_app': '自动化分析工具', 'desc': '时序自动化'}"}
+预期状态: {'Status': 201, 'msg': 'XOCTIwyAlluQsvovzCwSCAfevgfTdrEQGNC非常资源就是只要如此文章标准这些新闻基本这是其中名称觉得虽然建设今天实现男人人员历史合作生活完全市场免费制作只有目前单位帖子以及其实你们就是只有文章进行出现时间方式当然产品单位一种这些以及发现出来有限发表文化法律他们以及进入电话商品自己留言那些之后学校完全这么业务XOCTIwyAlluQsvovzCwSCAfevgfTdrEQG'}
+实际项目名称: XOCTIwyAlluQsvovzCwSCAfevgfTdrEQGNC非常资源就是只要如此文章标准这些新闻基本这是其中名称觉得虽然建设今天实现男人人员历史合作生活完全市场免费制作只有目前单位帖子以及其实你们就是只有文章进行出现时间方式当然产品单位一种这些以及发现出来有限发表文化法律他们以及进入电话商品自己留言那些之后学校完全这么业务XOCTIwyAlluQsvovzCwSCAfevgfTdrEQG
+预期项目名称: XOCTIwyAlluQsvovzCwSCAfevgfTdrEQGNC非常资源就是只要如此文章标准这些新闻基本这是其中名称觉得虽然建设今天实现男人人员历史合作生活完全市场免费制作只有目前单位帖子以及其实你们就是只有文章进行出现时间方式当然产品单位一种这些以及发现出来有限发表文化法律他们以及进入电话商品自己留言那些之后学校完全这么业务XOCTIwyAlluQsvovzCwSCAfevgfTdrEQG
+test_case_02 (test_case_projects.TestProjects)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>48</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_03</td>
+                    <td>创建项目_失败_项目名称长度0</td>
+                    <td>0.114s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'name': ['该字段不能为空。']}"}
+预期状态: {'Status': 400, 'msg': '该字段不能为空'}
+test_case_03 (test_case_projects.TestProjects)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>49</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_04</td>
+                    <td>创建项目_失败_项目名称长度201</td>
+                    <td>0.209s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'name': ['请确保这个字段不能超过 200 个字符。']}"}
+预期状态: {'Status': 400, 'msg': '请确保这个字段不能超过 200 个字符'}
+test_case_04 (test_case_projects.TestProjects)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>50</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_05</td>
+                    <td>创建项目_失败_项目名称重复</td>
+                    <td>0.205s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'name': ['具有 项目名称 的 项目信息 已存在。']}"}
+预期状态: {'Status': 400, 'msg': '具有 项目名称 的 项目信息 已存在'}
+test_case_05 (test_case_projects.TestProjects)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>51</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_06</td>
+                    <td>创建项目_失败_项目名称参数错误</td>
+                    <td>0.117s</td>
+                    
+                        <td class="text-danger">失败</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'name': ['具有 项目名称 的 项目信息 已存在。']}"}
+预期状态: {'Status': 400, 'msg': '项目名称参数错误'}
+test_case_06 (test_case_projects.TestProjects)执行——>【失败】
+</pre>
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 628, in run
+    testMethod()
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\site-packages\ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 44, in test_case
+    raise e
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 35, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 35, in com_assertEqual
+    com_assertIn(str(respone.json()), expect["msg"])  # msg
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 40, in com_assertIn
+    raise AssertionError
+</pre>
+                        
+
+                            <pre>AssertionError
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>52</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_07</td>
+                    <td>创建项目_失败_项目名称参数为空</td>
+                    <td>0.11s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'name': ['该字段是必填项。']}"}
+预期状态: {'Status': 400, 'msg': '该字段是必填项'}
+test_case_07 (test_case_projects.TestProjects)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>53</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_08</td>
+                    <td>创建项目_成功_项目负责人长度50</td>
+                    <td>0.322s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 173, 'create_time': '2020-09-13T16:49:31.115118+08:00', 'name': 'PlFlCUrTmjDFtWwMxkDaQfBjppYuYKwFlYYvCnEfEVAoHcAQHNbRrRLJHPBJffmSHlSRprVigyLubUkABgsMoGIwuOXiKDAiaNdQ', 'leader': 'ZhOiAxlqjZSUtTA注意希望应该质量你们设计那么报告销售国际主题不会简介这个汽车怎么地区国', 'tester': '孙忘', 'programmer': '孙忘', 'publish_app': '自动化分析工具', 'desc': '时序自动化'}"}
+预期状态: {'Status': 201, 'msg': 'PlFlCUrTmjDFtWwMxkDaQfBjppYuYKwFlYYvCnEfEVAoHcAQHNbRrRLJHPBJffmSHlSRprVigyLubUkABgsMoGIwuOXiKDAiaNdQ'}
+实际项目名称: PlFlCUrTmjDFtWwMxkDaQfBjppYuYKwFlYYvCnEfEVAoHcAQHNbRrRLJHPBJffmSHlSRprVigyLubUkABgsMoGIwuOXiKDAiaNdQ
+预期项目名称: PlFlCUrTmjDFtWwMxkDaQfBjppYuYKwFlYYvCnEfEVAoHcAQHNbRrRLJHPBJffmSHlSRprVigyLubUkABgsMoGIwuOXiKDAiaNdQ
+test_case_08 (test_case_projects.TestProjects)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>54</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_09</td>
+                    <td>创建项目_失败_领导人参数错误</td>
+                    <td>0.243s</td>
+                    
+                        <td class="text-danger">失败</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 174, 'create_time': '2020-09-13T16:49:31.441696+08:00', 'name': 'nckfUQSRYyhexrgmGjCAftAYTgljIzxtVvaQJZuIZhrZaGQGKKJHhdjOgXbNXCrHnTKFAcxXaoyXWVXmAmLYWSqODGLEnSxovqqo', 'leader': '123456', 'tester': '孙忘', 'programmer': '孙忘', 'publish_app': '自动化分析工具', 'desc': '时序自动化'}"}
+预期状态: {'Status': 400, 'msg': '领导人参数错误'}
+test_case_09 (test_case_projects.TestProjects)执行——>【失败】
+</pre>
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 628, in run
+    testMethod()
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\site-packages\ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 44, in test_case
+    raise e
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 35, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 34, in com_assertEqual
+    self.assertEqual(respone.status_code, expect["Status"])  # 判断code
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+</pre>
+                        
+
+                            <pre>AssertionError: 201 != 400
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>55</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_10</td>
+                    <td>创建项目_失败_领导人长度0</td>
+                    <td>0.205s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'leader': ['该字段不能为空。']}"}
+预期状态: {'Status': 400, 'msg': '该字段不能为空'}
+test_case_10 (test_case_projects.TestProjects)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>56</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_11</td>
+                    <td>创建项目_失败_领导人长度51</td>
+                    <td>0.203s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'leader': ['请确保这个字段不能超过 50 个字符。']}"}
+预期状态: {'Status': 400, 'msg': '请确保这个字段不能超过 50 个字符'}
+test_case_11 (test_case_projects.TestProjects)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>57</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_12</td>
+                    <td>创建项目_失败_领导人参数为空</td>
+                    <td>0.204s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'leader': ['该字段是必填项。']}"}
+预期状态: {'Status': 400, 'msg': '该字段是必填项'}
+test_case_12 (test_case_projects.TestProjects)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>58</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_13</td>
+                    <td>创建项目_成功_项目测试人长度50</td>
+                    <td>0.314s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 175, 'create_time': '2020-09-13T16:49:32.301096+08:00', 'name': 'KTIbZHtcEzJzZIkWlyrDrNJgaTRVdUlKkyZxSJbfcpMatPVatAjkYhVrCXOyLKpJNyTqUAFmAbLDeMkFsdjrDoiZucxAYpCvGsOl', 'leader': '孙忘', 'tester': 'rIiRpVphhRtp发生投资开发深圳两个由于以上需要联系基本对于需要方面软件很多作品社会等级城市', 'programmer': '孙忘', 'publish_app': '自动化分析工具', 'desc': '时序自动化'}"}
+预期状态: {'Status': 201, 'msg': 'KTIbZHtcEzJzZIkWlyrDrNJgaTRVdUlKkyZxSJbfcpMatPVatAjkYhVrCXOyLKpJNyTqUAFmAbLDeMkFsdjrDoiZucxAYpCvGsOl'}
+实际项目名称: KTIbZHtcEzJzZIkWlyrDrNJgaTRVdUlKkyZxSJbfcpMatPVatAjkYhVrCXOyLKpJNyTqUAFmAbLDeMkFsdjrDoiZucxAYpCvGsOl
+预期项目名称: KTIbZHtcEzJzZIkWlyrDrNJgaTRVdUlKkyZxSJbfcpMatPVatAjkYhVrCXOyLKpJNyTqUAFmAbLDeMkFsdjrDoiZucxAYpCvGsOl
+test_case_13 (test_case_projects.TestProjects)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>59</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_14</td>
+                    <td>创建项目_失败_项目测试人参数错误</td>
+                    <td>0.234s</td>
+                    
+                        <td class="text-danger">失败</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 176, 'create_time': '2020-09-13T16:49:32.611754+08:00', 'name': 'tRVtDhTMiyvoSOIaqyASHvenLCMGlZTvjZDSSIuiqxkWrFNrJhXfKlmCNRHVJajozqeprnGmnWHFLOXlXnkmRfawAGVUoZCZztlZ', 'leader': '孙忘', 'tester': '123456', 'programmer': '孙忘', 'publish_app': '自动化分析工具', 'desc': '时序自动化'}"}
+预期状态: {'Status': 400, 'msg': '项目测试人参数错误'}
+test_case_14 (test_case_projects.TestProjects)执行——>【失败】
+</pre>
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 628, in run
+    testMethod()
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\site-packages\ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 44, in test_case
+    raise e
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 35, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 34, in com_assertEqual
+    self.assertEqual(respone.status_code, expect["Status"])  # 判断code
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+</pre>
+                        
+
+                            <pre>AssertionError: 201 != 400
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>60</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_15</td>
+                    <td>创建项目_失败_项目测试人长度0</td>
+                    <td>0.207s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'tester': ['该字段不能为空。']}"}
+预期状态: {'Status': 400, 'msg': '该字段不能为空'}
+test_case_15 (test_case_projects.TestProjects)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>61</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_16</td>
+                    <td>创建项目_失败_项目测试人长度51</td>
+                    <td>0.21s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'tester': ['请确保这个字段不能超过 50 个字符。']}"}
+预期状态: {'Status': 400, 'msg': '请确保这个字段不能超过 50 个字符'}
+test_case_16 (test_case_projects.TestProjects)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>62</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_17</td>
+                    <td>创建项目_失败_项目测试人参数为空</td>
+                    <td>0.221s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'tester': ['该字段是必填项。']}"}
+预期状态: {'Status': 400, 'msg': '该字段是必填项'}
+test_case_17 (test_case_projects.TestProjects)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>63</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_18</td>
+                    <td>创建项目_成功_项目开发人长度50</td>
+                    <td>0.335s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 177, 'create_time': '2020-09-13T16:49:33.488509+08:00', 'name': 'zEoFQgirGOIEHFqFhWORcwUcVgTjQSlorCjfYuvzsOHaEPuObBmLXMPHuMnRMLcdTaHBmcFZgSXVhOuipkEOXgDfATjEshDKrIrF', 'leader': '孙忘', 'tester': '孙忘', 'programmer': 'jErloegKZFgqyKfiWESKalKSDBDI谢谢网上她的电话这么谢谢资源不断发现生产影响', 'publish_app': '自动化分析工具', 'desc': '时序自动化'}"}
+预期状态: {'Status': 201, 'msg': 'zEoFQgirGOIEHFqFhWORcwUcVgTjQSlorCjfYuvzsOHaEPuObBmLXMPHuMnRMLcdTaHBmcFZgSXVhOuipkEOXgDfATjEshDKrIrF'}
+实际项目名称: zEoFQgirGOIEHFqFhWORcwUcVgTjQSlorCjfYuvzsOHaEPuObBmLXMPHuMnRMLcdTaHBmcFZgSXVhOuipkEOXgDfATjEshDKrIrF
+预期项目名称: zEoFQgirGOIEHFqFhWORcwUcVgTjQSlorCjfYuvzsOHaEPuObBmLXMPHuMnRMLcdTaHBmcFZgSXVhOuipkEOXgDfATjEshDKrIrF
+test_case_18 (test_case_projects.TestProjects)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>64</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_19</td>
+                    <td>创建项目_失败_开发人参数错误</td>
+                    <td>0.24s</td>
+                    
+                        <td class="text-danger">失败</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 178, 'create_time': '2020-09-13T16:49:33.824163+08:00', 'name': 'elLmxkGNaoxPfGfhKMuflImgnMSNCLRAMSbactJVYmQoWofimoTpXeGVVrWeesVzwmWguOAzcozwBcThPOuotHFEVBSasPsbtNXs', 'leader': '孙忘', 'tester': '孙忘', 'programmer': '123456', 'publish_app': '自动化分析工具', 'desc': '时序自动化'}"}
+预期状态: {'Status': 400, 'msg': '开发人参数错误'}
+test_case_19 (test_case_projects.TestProjects)执行——>【失败】
+</pre>
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 628, in run
+    testMethod()
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\site-packages\ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 44, in test_case
+    raise e
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 35, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 34, in com_assertEqual
+    self.assertEqual(respone.status_code, expect["Status"])  # 判断code
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+</pre>
+                        
+
+                            <pre>AssertionError: 201 != 400
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>65</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_20</td>
+                    <td>创建项目_失败_开发人参长度为0</td>
+                    <td>0.218s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'programmer': ['该字段不能为空。']}"}
+预期状态: {'Status': 400, 'msg': '该字段不能为空'}
+test_case_20 (test_case_projects.TestProjects)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>66</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_21</td>
+                    <td>创建项目_失败_开发人参长度为51</td>
+                    <td>0.22s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'programmer': ['请确保这个字段不能超过 50 个字符。']}"}
+预期状态: {'Status': 400, 'msg': '请确保这个字段不能超过 50 个字符'}
+test_case_21 (test_case_projects.TestProjects)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>67</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_22</td>
+                    <td>创建项目_失败_开发人参数为空</td>
+                    <td>0.218s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'programmer': ['该字段是必填项。']}"}
+预期状态: {'Status': 400, 'msg': '该字段是必填项'}
+test_case_22 (test_case_projects.TestProjects)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>68</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_23</td>
+                    <td>创建项目_成功_发布应用长度100</td>
+                    <td>0.328s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 179, 'create_time': '2020-09-13T16:49:34.719618+08:00', 'name': 'QlFYggpUbkchWjfivWGPmhKCwbxvKDWKvKBGuChfWqjFNfQgrOfKiAUteaggSPyvaFBDERlBhlLLlmSwqRQvKnjuPfLMPVxlJFKe', 'leader': '孙忘', 'tester': '孙忘', 'programmer': '孙忘', 'publish_app': 'kYnVMdyieJeSwG继续活动方法提高方法操作资料发生简介网站简介单位情况完全她的主要方面只要下载关系可是图片社会有关无法游戏kYnVMdyieJeSwG继续活动方法提高方法操作资料发生简介网站', 'desc': '时序自动化'}"}
+预期状态: {'Status': 201, 'msg': 'QlFYggpUbkchWjfivWGPmhKCwbxvKDWKvKBGuChfWqjFNfQgrOfKiAUteaggSPyvaFBDERlBhlLLlmSwqRQvKnjuPfLMPVxlJFKe'}
+实际项目名称: QlFYggpUbkchWjfivWGPmhKCwbxvKDWKvKBGuChfWqjFNfQgrOfKiAUteaggSPyvaFBDERlBhlLLlmSwqRQvKnjuPfLMPVxlJFKe
+预期项目名称: QlFYggpUbkchWjfivWGPmhKCwbxvKDWKvKBGuChfWqjFNfQgrOfKiAUteaggSPyvaFBDERlBhlLLlmSwqRQvKnjuPfLMPVxlJFKe
+test_case_23 (test_case_projects.TestProjects)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>69</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_24</td>
+                    <td>创建项目_失败_发布应用参数错误</td>
+                    <td>0.232s</td>
+                    
+                        <td class="text-danger">失败</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 180, 'create_time': '2020-09-13T16:49:35.043883+08:00', 'name': 'UlxJhzheVLnuEJAXxchldwPcDWgAEsgPJZyuwsAoXGaIZNsPickIHylEVtVQfCzBmCGgrMgtzgFvstBIhhUyrzQLUNBuUWslzhPU', 'leader': '孙忘', 'tester': '孙忘', 'programmer': '孙忘', 'publish_app': '123456', 'desc': '时序自动化'}"}
+预期状态: {'Status': 400, 'msg': '发布应用参数错误'}
+test_case_24 (test_case_projects.TestProjects)执行——>【失败】
+</pre>
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 628, in run
+    testMethod()
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\site-packages\ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 44, in test_case
+    raise e
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\testcase\test_case_projects.py", line 35, in test_case
+    com_assertEqual(self, respone, eval(kwargs["expect"]))
+</pre>
+                        
+
+                            <pre>  File "c:\工具资料\GitHub\python_api_keyou\com_func\com_request_func.py", line 34, in com_assertEqual
+    self.assertEqual(respone.status_code, expect["Status"])  # 判断code
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 852, in assertEqual
+    assertion_func(first, second, msg=msg)
+</pre>
+                        
+
+                            <pre>  File "C:\Users\64121\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 845, in _baseAssertEqual
+    raise self.failureException(msg)
+</pre>
+                        
+
+                            <pre>AssertionError: 201 != 400
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>70</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_25</td>
+                    <td>创建项目_失败_发布应用参数长度为0</td>
+                    <td>0.21s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'publish_app': ['该字段不能为空。']}"}
+预期状态: {'Status': 400, 'msg': '该字段不能为空'}
+test_case_25 (test_case_projects.TestProjects)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>71</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_26</td>
+                    <td>创建项目_失败_发布应用参数长度为101</td>
+                    <td>0.206s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'publish_app': ['请确保这个字段不能超过 100 个字符。']}"}
+预期状态: {'Status': 400, 'msg': '请确保这个字段不能超过 100 个字符'}
+test_case_26 (test_case_projects.TestProjects)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>72</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_27</td>
+                    <td>创建项目_失败_发布应用参数长度为空</td>
+                    <td>0.201s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'publish_app': ['该字段是必填项。']}"}
+预期状态: {'Status': 400, 'msg': '该字段是必填项'}
+test_case_27 (test_case_projects.TestProjects)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>73</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_28</td>
+                    <td>创建项目_成功_简要描述长度200</td>
+                    <td>0.324s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 181, 'create_time': '2020-09-13T16:49:35.892101+08:00', 'name': 'yyhHqkRQZTQipHyuChCuPxxzTufZQATaSAekaYkoEagYdAhPRTEOvHmuwfgMBGVRvvMEqTgmUpAMvMRrpafclnItlMgsERxgqiPb', 'leader': '孙忘', 'tester': '孙忘', 'programmer': '孙忘', 'publish_app': '孙忘', 'desc': 'iDNSefZlsUwZCAGumYkzXhvHdgFAeJMwDgECRbLPqOJuKelakOBeaOwsnvVRdLftBHoPaEhTlICOSkXEXvawQHqMTpnsSyczcxdmIHUHpzGxuncksZXxLThMjDGmlTcQPEnxfawlcQpuBRoABTePPYWcEmKvgtvDnjifDMpJYsGCuREGZzBCgknIXOcnbLCinXuuKtf解'}"}
+预期状态: {'Status': 201, 'msg': 'yyhHqkRQZTQipHyuChCuPxxzTufZQATaSAekaYkoEagYdAhPRTEOvHmuwfgMBGVRvvMEqTgmUpAMvMRrpafclnItlMgsERxgqiPb'}
+实际项目名称: yyhHqkRQZTQipHyuChCuPxxzTufZQATaSAekaYkoEagYdAhPRTEOvHmuwfgMBGVRvvMEqTgmUpAMvMRrpafclnItlMgsERxgqiPb
+预期项目名称: yyhHqkRQZTQipHyuChCuPxxzTufZQATaSAekaYkoEagYdAhPRTEOvHmuwfgMBGVRvvMEqTgmUpAMvMRrpafclnItlMgsERxgqiPb
+test_case_28 (test_case_projects.TestProjects)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>74</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_29</td>
+                    <td>创建项目_成功_简要描述长度0</td>
+                    <td>0.319s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 182, 'create_time': '2020-09-13T16:49:36.215115+08:00', 'name': 'osASghGSgkRZCKdcUbJwgLEmCGLScLFnlupzuWoonpeuqWuKuNZkmJkNQQyvHQTWJeowWtuiuJzywVfMIPyHaWITalVVhBJjRYzD', 'leader': '孙忘', 'tester': '孙忘', 'programmer': '孙忘', 'publish_app': '孙忘', 'desc': ''}"}
+预期状态: {'Status': 201, 'msg': 'osASghGSgkRZCKdcUbJwgLEmCGLScLFnlupzuWoonpeuqWuKuNZkmJkNQQyvHQTWJeowWtuiuJzywVfMIPyHaWITalVVhBJjRYzD'}
+实际项目名称: osASghGSgkRZCKdcUbJwgLEmCGLScLFnlupzuWoonpeuqWuKuNZkmJkNQQyvHQTWJeowWtuiuJzywVfMIPyHaWITalVVhBJjRYzD
+预期项目名称: osASghGSgkRZCKdcUbJwgLEmCGLScLFnlupzuWoonpeuqWuKuNZkmJkNQQyvHQTWJeowWtuiuJzywVfMIPyHaWITalVVhBJjRYzD
+test_case_29 (test_case_projects.TestProjects)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>75</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_30</td>
+                    <td>创建项目_成功_简要描述长度为空</td>
+                    <td>0.305s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 183, 'create_time': '2020-09-13T16:49:36.535796+08:00', 'name': 'gQGmlQJBVMBLUtPrrTDYzwhZVzSrAeSESDqEyKWvSsqautpWkjKUMDwRiPjvUqrOqrZCebXBQFCmwnRWeqmFYeVgOjcYeZDHsByh', 'leader': '孙忘', 'tester': '孙忘', 'programmer': '孙忘', 'publish_app': '孙忘', 'desc': ''}"}
+预期状态: {'Status': 201, 'msg': 'gQGmlQJBVMBLUtPrrTDYzwhZVzSrAeSESDqEyKWvSsqautpWkjKUMDwRiPjvUqrOqrZCebXBQFCmwnRWeqmFYeVgOjcYeZDHsByh'}
+实际项目名称: gQGmlQJBVMBLUtPrrTDYzwhZVzSrAeSESDqEyKWvSsqautpWkjKUMDwRiPjvUqrOqrZCebXBQFCmwnRWeqmFYeVgOjcYeZDHsByh
+预期项目名称: gQGmlQJBVMBLUtPrrTDYzwhZVzSrAeSESDqEyKWvSsqautpWkjKUMDwRiPjvUqrOqrZCebXBQFCmwnRWeqmFYeVgOjcYeZDHsByh
+test_case_30 (test_case_projects.TestProjects)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>76</td>
+                    <td class="TestProjects">TestProjects</td>
+                    <td>test_case_31</td>
+                    <td>创建项目_失败_简要描述长度201</td>
+                    <td>0.21s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'desc': ['请确保这个字段不能超过 200 个字符。']}"}
+预期状态: {'Status': 400, 'msg': '请确保这个字段不能超过 200 个字符'}
+test_case_31 (test_case_projects.TestProjects)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>77</td>
+                    <td class="TestTestcases">TestTestcases</td>
+                    <td>test_case_01</td>
+                    <td>创建用例_成功_名称长度1</td>
+                    <td>0.331s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 35, 'name': 'J', 'interface': {'name': 'vGAkZCywZTPKevxSKkUNZKjfOZhtCbOcFGDsyPpLQQOjHEBsZqpgIvQOcQdtKyNRMjOCEGrAOkDjfuUEOjKqnbrfZvPjMmodEEeegpuOcEOImaSnkclFANMZKttwYfKlCizEmsyjAQufbrrphZaCoDZn这么时候详细的是我们企业日期单位地方所有自己来源最新不要作者学生能够也是地区表示国家看到还是地址', 'project': 'htqsj'}, 'author': '孙忘'}"}
+预期状态: {'Status': 201, 'msg': 'J'}
+实际用例名称: J
+预期用例名称: J
+test_case_01 (test_case_projects.TestTestcases)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>78</td>
+                    <td class="TestTestcases">TestTestcases</td>
+                    <td>test_case_02</td>
+                    <td>创建用例_成功_名称长度50</td>
+                    <td>0.335s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 36, 'name': 'qGOJusYHXEAsRaqOaFoeLLpSDKazdZsjA上海一样大家结果今年中文两个非常大', 'interface': {'name': 'vGAkZCywZTPKevxSKkUNZKjfOZhtCbOcFGDsyPpLQQOjHEBsZqpgIvQOcQdtKyNRMjOCEGrAOkDjfuUEOjKqnbrfZvPjMmodEEeegpuOcEOImaSnkclFANMZKttwYfKlCizEmsyjAQufbrrphZaCoDZn这么时候详细的是我们企业日期单位地方所有自己来源最新不要作者学生能够也是地区表示国家看到还是地址', 'project': 'htqsj'}, 'author': '孙忘'}"}
+预期状态: {'Status': 201, 'msg': 'qGOJusYHXEAsRaqOaFoeLLpSDKazdZsjA上海一样大家结果今年中文两个非常大'}
+实际用例名称: qGOJusYHXEAsRaqOaFoeLLpSDKazdZsjA上海一样大家结果今年中文两个非常大
+预期用例名称: qGOJusYHXEAsRaqOaFoeLLpSDKazdZsjA上海一样大家结果今年中文两个非常大
+test_case_02 (test_case_projects.TestTestcases)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>79</td>
+                    <td class="TestTestcases">TestTestcases</td>
+                    <td>test_case_03</td>
+                    <td>创建用例_失败_项目id无效</td>
+                    <td>0.271s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'interface': {'pid': ['所选项目不存在!']}}"}
+预期状态: {'Status': 400, 'msg': '所选项目不存在'}
+test_case_03 (test_case_projects.TestTestcases)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>80</td>
+                    <td class="TestTestcases">TestTestcases</td>
+                    <td>test_case_04</td>
+                    <td>创建用例_失败_接口id无效</td>
+                    <td>0.276s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'interface': {'iid': ['所选接口不存在!']}}"}
+预期状态: {'Status': 400, 'msg': '所选接口不存在'}
+test_case_04 (test_case_projects.TestTestcases)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>81</td>
+                    <td class="TestTestcases">TestTestcases</td>
+                    <td>test_case_05</td>
+                    <td>创建用例_失败_项目和接口为空</td>
+                    <td>0.211s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'interface': {'non_field_errors': ['无效数据。期待为字典类型，得到的是 str 。']}}"}
+预期状态: {'Status': 400, 'msg': '无效数据。期待为字典类型'}
+test_case_05 (test_case_projects.TestTestcases)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>82</td>
+                    <td class="TestTestcases">TestTestcases</td>
+                    <td>test_case_06</td>
+                    <td>创建用例_失败_项目和接口不填</td>
+                    <td>0.212s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'interface': ['该字段是必填项。']}"}
+预期状态: {'Status': 400, 'msg': '该字段是必填项'}
+test_case_06 (test_case_projects.TestTestcases)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>83</td>
+                    <td class="TestTestcases">TestTestcases</td>
+                    <td>test_case_07</td>
+                    <td>创建用例_失败_前置为空</td>
+                    <td>0.22s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'include': ['该字段不能为空。']}"}
+预期状态: {'Status': 400, 'msg': '该字段不能为空'}
+test_case_07 (test_case_projects.TestTestcases)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>84</td>
+                    <td class="TestTestcases">TestTestcases</td>
+                    <td>test_case_08</td>
+                    <td>创建用例_成功_编写人员长度50</td>
+                    <td>0.319s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 201, 'msg': "{'id': 37, 'name': 'gmJliTVEvrdxvXiyQfpRuuPyXWRXZiRuisFAgtYUmT全部根据功能电影', 'interface': {'name': 'vGAkZCywZTPKevxSKkUNZKjfOZhtCbOcFGDsyPpLQQOjHEBsZqpgIvQOcQdtKyNRMjOCEGrAOkDjfuUEOjKqnbrfZvPjMmodEEeegpuOcEOImaSnkclFANMZKttwYfKlCizEmsyjAQufbrrphZaCoDZn这么时候详细的是我们企业日期单位地方所有自己来源最新不要作者学生能够也是地区表示国家看到还是地址', 'project': 'htqsj'}, 'author': 'KlSCoibrCQ继续生产以后目前而且论坛参加手机一定评论这些专业那么精华根据汽车免费一次女人Kl'}"}
+预期状态: {'Status': 201, 'msg': 'gmJliTVEvrdxvXiyQfpRuuPyXWRXZiRuisFAgtYUmT全部根据功能电影'}
+实际用例名称: gmJliTVEvrdxvXiyQfpRuuPyXWRXZiRuisFAgtYUmT全部根据功能电影
+预期用例名称: gmJliTVEvrdxvXiyQfpRuuPyXWRXZiRuisFAgtYUmT全部根据功能电影
+test_case_08 (test_case_projects.TestTestcases)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>85</td>
+                    <td class="TestTestcases">TestTestcases</td>
+                    <td>test_case_09</td>
+                    <td>创建用例_失败_编写人员长度51</td>
+                    <td>0.217s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'author': ['请确保这个字段不能超过 50 个字符。']}"}
+预期状态: {'Status': 400, 'msg': '请确保这个字段不能超过 50 个字符'}
+test_case_09 (test_case_projects.TestTestcases)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>86</td>
+                    <td class="TestTestcases">TestTestcases</td>
+                    <td>test_case_10</td>
+                    <td>创建用例_失败_编写人员长度0</td>
+                    <td>0.209s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'author': ['该字段不能为空。']}"}
+预期状态: {'Status': 400, 'msg': '该字段不能为空'}
+test_case_10 (test_case_projects.TestTestcases)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>87</td>
+                    <td class="TestTestcases">TestTestcases</td>
+                    <td>test_case_11</td>
+                    <td>创建用例_失败_编写人员不填</td>
+                    <td>0.217s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'author': ['该字段是必填项。']}"}
+预期状态: {'Status': 400, 'msg': '该字段是必填项'}
+test_case_11 (test_case_projects.TestTestcases)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>88</td>
+                    <td class="TestTestcases">TestTestcases</td>
+                    <td>test_case_12</td>
+                    <td>创建用例_失败_请求信息为空</td>
+                    <td>0.208s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'request': ['该字段不能为空。']}"}
+预期状态: {'Status': 400, 'msg': '该字段不能为空'}
+test_case_12 (test_case_projects.TestTestcases)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>89</td>
+                    <td class="TestTestcases">TestTestcases</td>
+                    <td>test_case_13</td>
+                    <td>创建用例_失败_请求信息不填</td>
+                    <td>0.206s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7">
+                        
+
+                            <pre>实际状态: {'Status': 400, 'msg': "{'request': ['该字段是必填项。']}"}
+预期状态: {'Status': 400, 'msg': '该字段是必填项'}
+test_case_13 (test_case_projects.TestTestcases)执行——>【通过】
 </pre>
                         
                         
@@ -1010,8 +3401,8 @@ test_case_19 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
                     show: false
                 },
                 data: [
-                    {value: 17, name: '通过'},
-                    {value: 2, name: '失败'},
+                    {value: 79, name: '通过'},
+                    {value: 10, name: '失败'},
                     {value: 0, name: '错误'},
                     {value: 0, name: '跳过'}
                 ]
@@ -1032,8 +3423,8 @@ test_case_19 (testcase.test_case_projects.TestInterfaces)执行——>【通过�
             {
                 name: '测试结果',
                 type: 'gauge',
-                detail: {formatter: '89.47%'},
-                data: [{value: '89.47', name: '用例通过率'}],
+                detail: {formatter: '88.76%'},
+                data: [{value: '88.76', name: '用例通过率'}],
                 axisLine: {
                     lineStyle: {
                         color: [

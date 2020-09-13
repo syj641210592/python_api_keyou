@@ -11,6 +11,7 @@ def env_params_init():
     try:
         env_params_regist()
         env_projects_create()
+        env_testcases_create()
     except Exception as e:
         log.error("测试环境数据初始化失败", exc_info=True)
         raise ValueError("测试环境数据初始化失败")
@@ -42,6 +43,23 @@ def env_projects_create():
         respone = com_request(env_projects_create, "projects", params=params, token=token)
         if respone.status_code == 201:
             config_write("PRESET", "projects", str(respone.json()))
+        else:
+            raise ValueError
+    except Exception as e:
+        raise ValueError
+
+def env_testcases_create():
+    '''生成一接口,将接口信息写入conf.ini文件'''
+    try:
+        # -------------------登录普通账户获取token----------------------------------------------
+        params = config.get("PRESET", "unadmin_params")
+        respone = com_request(env_projects_create, "login", params=params)
+        token = "JWT" + " " + respone.json()["token"]
+        # -------------------创建接口----------------------------------------------
+        params = {"name": "*tcname new 200 ec*","tester": "孙忘","project_id": "*projects id exist*","desc": "时序自动化"}
+        respone = com_request(env_testcases_create, "interfaces", params=params, token=token)
+        if respone.status_code == 201:
+            config_write("PRESET", "interfaces", str(respone.json()))
         else:
             raise ValueError
     except Exception as e:
