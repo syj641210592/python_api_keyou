@@ -73,6 +73,10 @@ def username_get(params_list, cls=None):
                 break
     elif "unadmin" in params_list:
         username = eval(config.get("PRESET", "unadmin_params"))["username"]
+    elif "exist" in params_list:
+        sql = "SELECT username FROM test.auth_user WHERE 1 ORBDER BY rand() LIMIT 1;"
+        res = mysql.sql_read(sql)
+        username = res["username"]
     return username
 
 
